@@ -49,4 +49,8 @@ public class CustomerQueue {
             return false;
     }
 
+    public Customer getHeadList() {
+        return customerList.poll();
+    }
+
 }
