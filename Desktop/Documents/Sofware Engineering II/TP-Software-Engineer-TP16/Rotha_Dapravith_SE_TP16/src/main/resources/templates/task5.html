@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task05 User's Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .cardd:hover{
+            background-color: grey;
+            cursor: pointer;
+            color: aquamarine;
+        }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <div class="flex">
+      <!-- Sidebar -->
+      <div class="bg-gray-400 w-64 p-4">
+        <h2 class="text-xl font-semibold mb-2">Menu</h2>
+        <ul>
+          <li class="my-2"><button onclick="showProfile()">Profile</button></li>
+          <li class="my-2"><button onclick="showHome()">Home</button></li>
+        </ul>
+      </div>
+
+      <!-- Main content -->
+      <div class="container mx-auto px-4 flex-1">
+        
+        <!-- Home -->
+        <div id="home">
+          <h1 class="text-3xl font-bold my-4">Dashboard</h1>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="cardd bg-white rounded-lg shadow p-4" onclick="showDetails(this)">
+              <h2 class="text-xl font-semibold mb-2">User 1</h2>
+              <p>Content for user 1.</p>
+            </div>
+            <div class="cardd bg-white rounded-lg shadow p-4" onclick="showDetails(this)">
+              <h2 class="text-xl font-semibold mb-2">User 2</h2>
+              <p>Content for user 2.</p>
+            </div>
+            <div class="cardd bg-white rounded-lg shadow p-4" onclick="showDetails(this)">
+              <h2 class="text-xl font-semibold mb-2">User 3</h2>
+              <p>Content for user 3.</p>
+            </div>
+          </div>
+
+          <!-- Pop-up -->
+          <div id="popup" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 hidden">
+            <div class="bg-white rounded-lg shadow p-4 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <button class="absolute top-0 right-0 p-2" onclick="hideDetails()">X</button>
+              <h3 id="popup-title" class="text-lg font-semibold mb-2"></h3>
+              <p id="popup-content"></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profile -->
+        <div id="profile" class="hidden bg-purple-100 rounded-lg shadow p-4">
+            <h1 class="text-3xl font-bold my-4">Profile</h1>
+            <!-- Add profile information here -->
+            <h1 class="text-3xl font-bold my-4">User Information</h1>
+            <p>Name: Rotha Dapravith</p>
+            <p>Email: dapravithrotha@gmail.com</p>
+          </div>
+      </div>
+    </div>
+
+    <!-- JavaScript code -->
+    <script>
+      function showHome() {
+        document.querySelector("#home").classList.remove("hidden");
+        document.querySelector("#profile").classList.add("hidden");
+      }
+
+      function showProfile() {
+        document.querySelector("#home").classList.add("hidden");
+        document.querySelector("#profile").classList.remove("hidden");
+      }
+
+      function showDetails(card) {
+        document.querySelector("#popup").classList.remove("hidden");
+        document.querySelector("#popup-title").textContent = card.querySelector("h2").textContent;
+        document.querySelector("#popup-content").textContent = card.querySelector("p").textContent;
+      }
+
+      function hideDetails() {
+        document.querySelector("#popup").classList.add("hidden");
+      }
+    </script>
+  </body>
+</html>
