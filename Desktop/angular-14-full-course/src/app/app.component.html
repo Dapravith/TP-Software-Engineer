@@ -1,0 +1,18 @@
+<nav class="flex justify-between p-4 bg-purple-900 text-white">
+    <div>
+        <a routerLink="/">Book Shop</a>
+    </div>
+    <div>
+        <a class="mx-4" routerLink="/cart"> My Cart</a>
+        <ng-container *ngIf="!isAuthenticated()">
+            <a class="mx-4" routerLink="/login"> Login</a>
+            <a class="mx-4" routerLink="/register"> Register</a>
+        </ng-container>
+        <ng-container *ngIf="isAuthenticated()">
+            <button (click)="logout()" class="mx-4">Logout</button>
+        </ng-container>
+    </div>
+</nav>
+<div class="p-4">
+    <router-outlet></router-outlet>
+</div>
