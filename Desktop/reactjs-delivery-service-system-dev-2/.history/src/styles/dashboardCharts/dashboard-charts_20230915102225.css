@@ -1,0 +1,250 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  /* InfoCard.css */
+  /* Default background colors for InfoCards */
+  /* Hover styles for each InfoCard */
+  /* Styling for the icon */
+  /* Styling for title */
+  /* Styling for value */
+  /* Add new CSS to center-align the InfoCard and Pie Chart */
+  /* Push the smaller-pie-chart to the right */
+}
+.dashboard-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: "ffff";
+}
+.dashboard-container .info-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next row if necessary */
+}
+.dashboard-container .info-cards {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.dashboard-container .info-card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+  margin-right: 20px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3 ease;
+}
+.dashboard-container .info-card .info-card i {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.dashboard-container .info-title {
+  font-size: 15px;
+  margin: 0;
+  color: "#ffff";
+}
+.dashboard-container .info-value {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+.dashboard-container .info-card.total-branch-owner {
+  background-color: #6283ec; /* Use primary color */
+}
+.dashboard-container .info-card.items {
+  background-color: #e74c3c; /* Use secondary color */
+}
+.dashboard-container .info-card.incoming-items {
+  background-color: #f39c12; /* Use tertiary color */
+}
+.dashboard-container .info-card.pending-items {
+  background-color: #27ae60; /* Use quaternary color */
+}
+.dashboard-container .info-card.delivered-item {
+  background-color: #9b59b6; /* Use quinary color */
+}
+.dashboard-container .info-card.total-profits {
+  background-color: #1abc9c; /* Use senary color */
+}
+.dashboard-container .info-card.some-other-category {
+  background-color: #3498db; /* Use septenary color */
+}
+.dashboard-container .info-card.total-branch-owner:hover {
+  background-color: #355fe6; /* Darken primary color on hover */
+}
+.dashboard-container .info-card.items:hover {
+  background-color: #d62c1a; /* Darken secondary color on hover */
+}
+.dashboard-container .info-card.incoming-items:hover {
+  background-color: #c87f0a; /* Darken tertiary color on hover */
+}
+.dashboard-container .info-card.pending-items:hover {
+  background-color: #1e8449; /* Darken quaternary color on hover */
+}
+.dashboard-container .info-card.delivered-item:hover {
+  background-color: #804399; /* Darken quinary color on hover */
+}
+.dashboard-container .info-card.total-profits:hover {
+  background-color: #148f77; /* Darken senary color on hover */
+}
+.dashboard-container .info-card.some-other-category:hover {
+  background-color: #217dbb; /* Darken septenary color on hover */
+}
+.dashboard-container .info-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.dashboard-container .info-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+.dashboard-container .info-value {
+  font-size: 16px;
+  margin: 0;
+}
+.dashboard-container .chart-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.dashboard-container .center-aligned {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.dashboard-container .center-aligned .bar-chart {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+  margin-left: 0; /* Push it to the left side */
+  margin-right: auto; /* Push it to the right side */
+  padding-left: 20px;
+  display: block; /* Remove the flex display */
+  text-align: center; /* Center-align the content */
+}
+.dashboard-container .grouped-bar-chart {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: 0;
+  padding-left: 20px;
+  text-align: center;
+}
+.dashboard-container .bar-chart {
+  width: 100%;
+  max-width: 400px;
+  marign-top: 10px;
+  margin-left: auto;
+  margin-right: 0;
+  padding-left: 20px;
+  text-align: center;
+}
+.dashboard-container .center-aligned .smaller-pie-chart {
+  display: flex;
+  width: 15%;
+  margin-right: 10px;
+  order: 2;
+  justify-content: center;
+}
+.dashboard-container .chart-container-pie-chart {
+  width: 80%;
+  display: flex;
+  max-width: 400px;
+  margin-left: 0 auto;
+}
+.dashboard-container .chart {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.dashboard-container .chart-left {
+  width: 70%;
+}
+.dashboard-container .chart-right {
+  width: 30%;
+}
+.dashboard-container .center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard-container .smaller-pie-chart {
+  margin-left: auto;
+  flex-direction: row;
+  display: flex;
+  width: 300px;
+}
+.dashboard-container .table-container {
+  width: 100%;
+  overflow-y: auto;
+}
+.dashboard-container .table-wrapper {
+  overflow-y: auto;
+}
+.dashboard-container table {
+  width: 100%;
+  min-width: 400px;
+  border-spacing: 0;
+}
+.dashboard-container thead {
+  background-color: var(--second-bg);
+}
+.dashboard-container tr {
+  text-align: left;
+}
+.dashboard-container th,
+.dashboard-container td {
+  text-transform: capitalize;
+  padding: 15px 10px;
+}
+.dashboard-container tbody > tr:hover {
+  background-color: var(--main-color);
+  color: var(--txt-white);
+}
+.dashboard-container .table__pagination {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+.dashboard-container .table__pagination-item ~ .table__pagination-item {
+  margin-left: 10px;
+}
+.dashboard-container .table__pagination-item {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.dashboard-container .table__pagination-item.active,
+.dashboard-container .table__pagination-item.active:hover {
+  background-color: var(--main-color);
+  color: var(--txt-white);
+  font-weight: 600;
+}
+.dashboard-container .table__pagination-item:hover {
+  color: var(--txt-white);
+  background-color: var(--second-color);
+}/*# sourceMappingURL=dashboard-charts_20230915102225.css.map */

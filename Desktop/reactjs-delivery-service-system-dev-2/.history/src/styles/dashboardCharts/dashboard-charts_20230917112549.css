@@ -1,0 +1,305 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 20px;
+}
+
+header {
+  background-color: var(--bg-primary);
+  padding: 10px 0;
+  text-align: center;
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark {
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+/* Dark mode styles */
+.dark .header {
+  background: #444;
+}
+
+/* Button styling and transition */
+button {
+  padding: 5px 15px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--text-primary);
+  color: var(--bg-secondary);
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  /* Default background colors for InfoCards */
+  /* Hover styles for each info-card */
+  /* Styling for the icon */
+  /* Styling for title */
+  /* Styling for value */
+  /* Update your existing CSS for .center-aligned .smaller-pie-chart */
+  /* Add new CSS to center-align the InfoCard and Pie Chart */
+  /* dashboard-charts.css */
+}
+.dashboard h2 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: "ffff";
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.dashboard .info-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next row if necessary */
+  border-radius: none;
+}
+.dashboard .info-card {
+  flex: 1; /* Distribute available space equally among flex items */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px;
+  color: #fff;
+  text-align: center;
+  min-width: 200px;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+.dashboard .info-card:hover {
+  background-color: #ffe4c4;
+}
+.dashboard .info-card i {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.dashboard .info-title {
+  font-size: 15px;
+  margin: 0;
+  color: "#ffff";
+}
+.dashboard .info-value {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+.dashboard .info-card.total-branch-owner {
+  background-color: #6283ec; /* Use primary color */
+}
+.dashboard .info-card.items {
+  background-color: #e74c3c; /* Use secondary color */
+}
+.dashboard .info-card.incoming-items {
+  background-color: #f39c12; /* Use tertiary color */
+}
+.dashboard .info-card.pending-items {
+  background-color: #27ae60; /* Use quaternary color */
+}
+.dashboard .info-card.delivered-item {
+  background-color: #9b59b6; /* Use quinary color */
+}
+.dashboard .info-card.total-profits {
+  background-color: #1abc9c; /* Use senary color */
+}
+.dashboard .info-card.total-branch-owner:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+.dashboard .info-card.items:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+.dashboard .info-card.incoming-items:hover {
+  background-color: #27ae60; /* Darker green on hover */
+}
+.dashboard .info-card.pending-items:hover {
+  background-color: #d4ac0d; /* Darker yellow on hover */
+}
+.dashboard .info-card.delivered-item:hover {
+  background-color: #8e44ad; /* Darker purple on hover */
+}
+.dashboard .info-card.total-profits:hover {
+  background-color: #16a085; /* Darker turquoise on hover */
+}
+.dashboard .info-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.dashboard .info-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+.dashboard .info-value {
+  font-size: 16px;
+  margin: 0;
+}
+.dashboard .chart-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.dashboard .center-aligned {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.dashboard .center-aligned .bar-chart {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+  margin-left: 0; /* Push it to the left side */
+  margin-right: auto; /* Push it to the right side */
+  padding-left: 20px;
+  display: block; /* Remove the flex display */
+  text-align: center; /* Center-align the content */
+}
+.dashboard .grouped-bar-chart {
+  margin: auto;
+}
+.dashboard .bar-chart {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: 0;
+  padding-left: 20px;
+  text-align: center;
+}
+.dashboard .center-aligned .smaller-pie-chart {
+  display: flex;
+  width: 15%;
+  margin-right: 10px;
+  order: 2;
+  justify-content: center;
+}
+.dashboard .center-aligned .smaller-pie-chart {
+  width: 15%;
+  margin-right: 10px;
+  order: 2;
+  justify-content: center;
+}
+.dashboard .center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start; /* This will align items to the top of the container */
+}
+.dashboard .multi-bar-chart {
+  width: 302px;
+  height: 422px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.1), 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  margin-left: 20px; /* Optional, for some spacing from the left edge */
+}
+.dashboard .pie-chart-container {
+  width: 302px;
+  height: 421px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.1), 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+.dashboard .charts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between; /* Creates space between the two charts */
+  gap: 20px;
+}
+.dashboard .recently-delivered-table .card {
+  width: 80%;
+  margin-top: 20px;
+}
+.dashboard .card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.dashboard .card-header {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.dashboard .recently-delivered-table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.dashboard .recently-delivered-table th {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+}
+.dashboard .recently-delivered-table td {
+  padding: 10px 15px;
+}
+.dashboard .recently-delivered-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.dashboard .status-pending {
+  background-color: yellow;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+}
+.dashboard .status-delivered {
+  background-color: lightgreen;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+}
+.dashboard .status-returned {
+  background-color: lightcoral;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+}
+.dashboard .action-button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-family: bold;
+  cursor: pointer;
+}
+.dashboard .action-button:hover {
+  background-color: #0056b3;
+}/*# sourceMappingURL=dashboard-charts_20230917112549.css.map */

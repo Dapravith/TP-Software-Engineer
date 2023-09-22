@@ -1,0 +1,178 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+  margin: 10px; /* Add margin to separate the cards */
+  width: calc(25% - 20px); /* Calculate width with margins included */
+}
+
+.info-card:nth-child(1) {
+  background-color: #6283ec;
+  color: white;
+}
+
+.info-card:nth-child(2) {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.info-card:nth-child(3) {
+  background-color: #f39c12;
+  color: white;
+}
+
+.info-card:nth-child(4) {
+  background-color: #27ae60;
+  color: white;
+}
+
+.info-card:hover {
+  background-color: #f0f0f0;
+}
+
+.info-card h3 {
+  margin: 10px 0;
+}
+
+.info-card p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.info-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.info-value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.chart-container {
+  position: relative;
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the chart container horizontally */
+}
+
+.chart-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.charts {
+  display: flex;
+  justify-content: center; /* Center align charts horizontally */
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center; /* Center align charts vertically */
+}
+
+.chart {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 30px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.chart-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  gap: 10px;
+  align-content: center;
+  justify-content: center;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* MultiBarChart.css */
+.multi-bar-chart-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the height to 100% of the viewport height */
+}
+
+/* Style for the chart container */
+.multi-bar-chart-container {
+  width: 100%;
+  max-width: 800px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the chart horizontally */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the chart title */
+.chart-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style for the chart canvas */
+.chart-canvas {
+  max-height: 400px; /* Adjust the maximum height as needed */
+}
+
+/* Style for the chart legend */
+.chart-legend {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Style for legend items */
+.chart-legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Adjust the spacing between legend items */
+}
+
+.chart-legend-color {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.chart-legend-label {
+  font-size: 14px;
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+  .multi-bar-chart-container {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+}/*# sourceMappingURL=dashboard-charts_20230914094446.css.map */

@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+.dashboard h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.dashboard .info-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.dashboard .info-card {
+  flex: 1;
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+  margin: 15px;
+  width: calc(25% - 20px);
+}
+.dashboard .info-card h3 {
+  margin: 10px 0;
+}
+.dashboard .info-card p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.dashboard .info-card:nth-child(1) {
+  background-color: #6283ec;
+  color: white;
+}
+.dashboard .info-card:nth-child(2) {
+  background-color: #e74c3c;
+  color: white;
+}
+.dashboard .info-card:nth-child(3) {
+  background-color: #f39c12;
+  color: white;
+}
+.dashboard .info-card:nth-child(4) {
+  background-color: #27ae60;
+  color: white;
+}
+.dashboard .info-card:hover:nth-child(1) {
+  background-color: #00bfff;
+}
+.dashboard .info-card:hover:nth-child(2) {
+  background-color: #FA1919;
+}
+.dashboard .info-card:hover:nth-child(3) {
+  background-color: #ff8c00;
+}
+.dashboard .info-card:hover:nth-child(4) {
+  background-color: #00fa9a;
+}
+.dashboard .chart-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.dashboard .bar-chart {
+  background-color: #f9f9f9;
+  border-color: #ddd;
+  order: 1; /* Change the order to move to the left */
+}
+.dashboard .center-aligned.smaller-pie-chart {
+  width: 15%;
+  margin-right: 10px;
+  order: 2;
+}
+.dashboard .right-aligned {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  padding-right: 20px;
+  order: 3; /* Change the order to move to the right */
+}/*# sourceMappingURL=dashboard-charts_20230914145011.css.map */

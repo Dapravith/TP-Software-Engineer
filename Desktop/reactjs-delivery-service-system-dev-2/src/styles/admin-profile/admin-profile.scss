@@ -1,0 +1,255 @@
+$light-box-shadow: 0 2px 4px 0 #00000020;
+$light: #fff;
+$light-blue: #f6f9fc;
+$style: #ff6c37;
+$style-hover: #d25a2e;
+$light-gray: #eee;
+$dark: #000;
+$btn-shadow: 0 2px 5px 0 #999;
+$cancel: #e0e0e0;
+$success: #3a913a;
+$danger: #da5050;
+$danger-hover: #b34242;
+$menu-shadow: 0 0 10px 0 #00000026;
+$dark-opacity: rgba(0,0,0,0.5);
+$blue: #5353ff;
+@mixin center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin button() {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.admin-profile-container {
+    padding: 40px;
+    .alert-upload-profile {
+        width: 100%;
+        height: 100vh;
+        background: $dark-opacity;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        @include center();
+        .upload-profile {
+            width: 400px;
+            padding: 20px;
+            background: $light;
+            border-radius: 5px;
+            h1 {
+                font-size: 25px;
+            }
+            input {
+                margin-top: 10px;
+            }
+            .upload-profile-btn {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                margin-top: 20px;
+                button {
+                    height: 40px;
+                    padding: 0 20px;
+                    @include button();
+                    border-radius: 5px;
+                    box-shadow: $btn-shadow;
+                    transition: background-color 0.2s;
+                    &:nth-child(1) {
+                        margin-right: 10px;
+                        background: $light;
+                        &:hover {
+                            background: $light-gray;
+                        }
+                    }
+                    &:nth-child(2) {
+                        background: $style;
+                        color: $light;
+                        &:hover {
+                            background: $style-hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .alert-updated {
+        height: 50px;
+        padding: 0 40px;
+        background: $success;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        @include center();
+        text-align: center;
+        border-radius: 5px 0 0 5px;
+        animation: from-right 0.5s;
+        @keyframes from-right {
+            0% {
+                right: -100%;
+            } 100% {
+                right: 0;
+            }    
+        }
+        p {
+            color: $light;
+        }
+    }
+    .branch-owner-profile-title {
+        h1 {
+            font-size: 25px;
+            font-weight: 600;
+        }
+    }
+    .branch-owner-profile-container {
+        margin-top: 50px;
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        justify-content: center;
+        .br-profile {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .branch-owner-profile-image {
+                width: 300px;
+                height: 300px;
+                background-size: cover !important;
+                background-position: center !important;
+                border-radius: 50%;
+                position: relative;
+                overflow: hidden;
+                &:hover {
+                    .edit-profile-image {
+                        display: flex;
+                    }
+                }
+                .edit-profile-image {
+                    width: 100%;
+                    height: 100%;
+                    background: $dark-opacity;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    display: none;
+                    animation: profile 0.2s;
+                    @keyframes profile {
+                        0% {
+                            opacity: 0;
+                        } 100% {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            button {
+                height: 30px;
+                padding: 0 20px;
+                background: $style;
+                margin-top: 20px;
+                font-size: 16px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                color: $light;
+                border-radius: 5px;
+                transition: background-color 0.2s;
+                &:hover {
+                    background: $style-hover;
+                }
+            }
+        }
+        .branch-owner-profile-container-content {
+            width: 700px;
+            max-width: 700px;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px 20px;
+            .branch-owner-content {
+                width: 100%;
+                max-width: 350px;
+                h3 {
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                }
+                p {
+                    font-size: 16px;
+                }
+                input {
+                    width: 100%;
+                    height: 40px;
+                    border: none;
+                    outline: none;
+                    font-size: 16px;
+                    padding: 0 10px;
+                    border-radius: 5px;
+                    background: $light;
+                    box-shadow: $light-box-shadow;
+                }
+                textarea {
+                    width: 100%;
+                    height: 150px;
+                    border: none;
+                    outline: none;
+                    font-size: 16px;
+                    padding: 10px;
+                    border-radius: 5px;
+                    background: $light;
+                    box-shadow: $light-box-shadow;
+                    resize: none;
+                }
+                button {
+                    @include button();
+                    height: 30px;
+                    padding: 0 20px;
+                    font-size: 16px;
+                    border-radius: 5px;
+                    background: $blue;
+                    color: $light;
+                    box-shadow: $btn-shadow;
+                    margin-top: 20px;
+                }
+            }
+            .save {
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                margin-top: 20px;
+                button {
+                    height: 40px;
+                    padding: 0 20px;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    font-size: 16px;
+                    border-radius: 5px;
+                    box-shadow: $btn-shadow;
+                    transition: background-color 0.2s;
+                    &:nth-child(1) {
+                        background: $light;
+                        margin-right: 10px;
+                        &:hover {
+                            background: $light-gray;
+                        }
+                    }
+                    &:nth-child(2) {
+                        background: $style;
+                        color: $light;
+                        &:hover {
+                            background: $style-hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

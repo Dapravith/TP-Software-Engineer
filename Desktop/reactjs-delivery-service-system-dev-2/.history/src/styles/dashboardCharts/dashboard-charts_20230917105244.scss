@@ -1,0 +1,356 @@
+$primary-color: #6283ec;
+$secondary-color: #e74c3c;
+$tertiary-color: #f39c12;
+$quaternary-color: #27ae60;
+$quinary-color: #9b59b6;
+$senary-color: #1abc9c;
+$septenary-color: #3498db;
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--bg-primary);
+    padding: 10px 0;
+    text-align: center;
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark {
+  background-color: #333;
+  color: #f4f4f4;
+}
+/* Dark mode styles */
+.dark .header {
+  background: #444;
+}
+
+/* Button styling and transition */
+button {
+    padding: 5px 15px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--text-primary);
+    color: var(--bg-secondary);
+}
+
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+
+  h2 {
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: 'ffff';
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  }
+
+.info-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next row if necessary */
+  border-radius: none;
+}
+
+.info-card {
+  flex: 1; /* Distribute available space equally among flex items */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px;
+  color: #fff;
+  text-align: center;
+  min-width: 200px;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.info-card:hover {
+  background-color: #ffe4c4 ;
+}
+
+.info-card i {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.info-title {
+  font-size: 15px;
+  margin: 0;
+  color: '#ffff';
+}
+
+.info-value {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Default background colors for InfoCards */
+.info-card.total-branch-owner {
+  background-color: $primary-color; /* Use primary color */
+}
+
+.info-card.items {
+  background-color: $secondary-color; /* Use secondary color */
+}
+
+.info-card.incoming-items {
+  background-color: $tertiary-color; /* Use tertiary color */
+}
+
+.info-card.pending-items {
+  background-color: $quaternary-color; /* Use quaternary color */
+}
+
+.info-card.delivered-item {
+  background-color: $quinary-color; /* Use quinary color */
+}
+
+.info-card.total-profits {
+  background-color: $senary-color; /* Use senary color */
+}
+
+/* Hover styles for each info-card */
+.info-card.total-branch-owner:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.info-card.items:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+.info-card.incoming-items:hover {
+  background-color: #27ae60; /* Darker green on hover */
+}
+
+.info-card.pending-items:hover {
+  background-color: #d4ac0d; /* Darker yellow on hover */
+}
+
+.info-card.delivered-item:hover {
+  background-color: #8e44ad; /* Darker purple on hover */
+}
+
+.info-card.total-profits:hover {
+  background-color: #16a085; /* Darker turquoise on hover */
+}
+/* Styling for the icon */
+.info-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Styling for title */
+.info-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Styling for value */
+.info-value {
+  font-size: 16px;
+  margin: 0;
+}
+
+  .chart-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .center-aligned {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.center-aligned .bar-chart {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+  margin-left: 0; /* Push it to the left side */
+  margin-right: auto; /* Push it to the right side */
+  padding-left: 20px;
+  display: block; /* Remove the flex display */
+  text-align: center; /* Center-align the content */
+}
+
+.grouped-bar-chart {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: 0;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.bar-chart {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: 0;
+  padding-left: 20px;
+  text-align: center;
+}
+  
+  .center-aligned .smaller-pie-chart {
+    display: flex;
+    width: 15%;
+    margin-right: 10px;
+    order: 2;
+    justify-content: center;
+  }
+
+  /* Update your existing CSS for .center-aligned .smaller-pie-chart */
+.center-aligned .smaller-pie-chart {
+  width: 15%;
+  margin-right: 10px;
+  order: 2;
+  justify-content: center;
+}
+
+/* Add new CSS to center-align the InfoCard and Pie Chart */
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.pie-chart-container {
+  flex: 1;
+  width: 302px;
+  height: 421px;
+  flex-shrink: 0;
+  border: 1px solid white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.charts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between; /* Creates space between the two charts */
+  gap: 20px;
+}
+
+.multi-bar-chart, .pie-chart, .recently-delivered-table {
+  width: 90%; /* You can adjust this as needed */
+}
+
+.recently-delivered-table .card {
+  width: 80%;
+  margin-top: 20px;
+}
+
+/* dashboard-charts.css */
+
+.card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.recently-delivered-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.recently-delivered-table th {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+}
+
+.recently-delivered-table td {
+    padding: 10px 15px;
+}
+
+.recently-delivered-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.status-pending {
+    background-color: yellow;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+}
+
+.status-delivered {
+    background-color: lightgreen;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+}
+
+.status-returned {
+    background-color: lightcoral;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+}
+
+.action-button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-family: bold;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+}

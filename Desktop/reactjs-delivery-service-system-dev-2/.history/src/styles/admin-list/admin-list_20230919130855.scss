@@ -1,0 +1,110 @@
+$light-box-shadow: 0 2px 4px 0 #00000020;
+$light: #fff;
+$light-blue: #f6f9fc;
+$style: #ff6c37;
+$style-hover: #d25a2e;
+$light-gray: #eee;
+$dark: #000;
+$btn-shadow: 0 2px 5px 0 #999;
+$cancel: #e0e0e0;
+$success: #3a913a;
+$danger: #da5050;
+$menu-shadow: 0 0 10px 0 #00000026;
+$dark-opacity: rgba(0,0,0,0.5);
+$delete: #ff2e2e;
+$blue: #5353ff;
+@mixin center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin button() {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.admin-list {
+    width: 100%;
+    padding: 40px;
+    h1 {
+        font-size: 25px;
+    }
+    .admin-list-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 15px;
+        background-color: #3a913a;
+        color: #ffffff;
+        font-weight: bold;
+        border-bottom: 2px solid #2a702a;
+    }
+    .admin-list-header span {
+    flex: 1;
+    text-align: center;
+    margin: 0 10px;
+    }
+    span:first-child {
+            font-weight: 600;
+            padding-left: 10px;
+            color: $blue;
+        }
+
+    span:last-child {
+            font-weight: 600;
+            padding-right: 10px;
+            color: $style;
+        }
+    .admin-list-container {
+        margin-top: 20px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        li {
+            width: 600px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            list-style-type: none;
+            border-radius: 5px;
+            color: $light;
+            div {
+                display: flex;
+                align-items: center;
+                .admin-pro {
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    border-radius: 50%;
+                    background-size: cover !important;
+                    background-position: center !important;
+                }
+                .is-me {
+                    height: 30px;
+                    padding: 0 10px;
+                    border-radius: 30px;
+                    background: rgba(255,255,255,0.3);
+                    margin-left: 10px;
+                }
+            }
+            &:nth-child(odd) {
+                background: $light-gray;
+            }
+            button {
+                width: 30px;
+                height: 30px;
+                background: $delete;
+                font-size: 18px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                border-radius: 5px;
+                box-shadow: $btn-shadow;
+                color: $light;
+            }
+        }
+    }
+}

@@ -1,0 +1,226 @@
+$primary-color: #6283ec;
+$secondary-color: #e74c3c;
+$tertiary-color: #f39c12;
+$quaternary-color: #27ae60;
+$quinary-color: #9b59b6;
+$senary-color: #1abc9c;
+$septenary-color: #3498db;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  padding: 12px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    font-size: 15px;
+    margin-bottom: 14px;
+    color: 'ffff';
+  }
+/* InfoCard.css */
+
+.info-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next row if necessary */
+}
+
+.info-card {
+  flex: 1; /* Distribute available space equally among flex items */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  min-width: 200px;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.info-card i {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.info-title {
+  font-size: 15px;
+  margin: 0;
+  color: '#ffff';
+}
+
+.info-value {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Default background colors for InfoCards */
+.info-card.total-branch-owner {
+  background-color: $primary-color; /* Use primary color */
+}
+
+.info-card.items {
+  background-color: $secondary-color; /* Use secondary color */
+}
+
+.info-card.incoming-items {
+  background-color: $tertiary-color; /* Use tertiary color */
+}
+
+.info-card.pending-items {
+  background-color: $quaternary-color; /* Use quaternary color */
+}
+
+.info-card.delivered-item {
+  background-color: $quinary-color; /* Use quinary color */
+}
+
+.info-card.total-profits {
+  background-color: $senary-color; /* Use senary color */
+}
+
+.info-card.some-other-category {
+  background-color: $septenary-color; /* Use septenary color */
+}
+
+/* Hover styles for each InfoCard */
+.info-card.total-branch-owner:hover {
+  background-color: darken($primary-color, 10%); /* Darken primary color on hover */
+}
+
+.info-card.items:hover {
+  background-color: darken($secondary-color, 10%); /* Darken secondary color on hover */
+}
+
+.info-card.incoming-items:hover {
+  background-color: darken($tertiary-color, 10%); /* Darken tertiary color on hover */
+}
+
+.info-card.pending-items:hover {
+  background-color: darken($quaternary-color, 10%); /* Darken quaternary color on hover */
+}
+
+.info-card.delivered-item:hover {
+  background-color: darken($quinary-color, 10%); /* Darken quinary color on hover */
+}
+
+.info-card.total-profits:hover {
+  background-color: darken($senary-color, 10%); /* Darken senary color on hover */
+}
+
+.info-card.some-other-category:hover {
+  background-color: darken($septenary-color, 10%); /* Darken septenary color on hover */
+}
+
+/* Styling for the icon */
+.info-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Styling for title */
+.info-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Styling for value */
+.info-value {
+  font-size: 16px;
+  margin: 0;
+}
+
+  .chart-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .center-aligned {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.center-aligned .bar-chart {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+  margin-left: 0; /* Push it to the left side */
+  margin-right: auto; /* Push it to the right side */
+  padding-left: 20px;
+  display: block; /* Remove the flex display */
+  text-align: center; /* Center-align the content */
+}
+
+.grouped-bar-chart {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: 0;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.bar-chart {
+  width: 100%;
+  max-width: 400px;
+  marign-top: 10px;
+  margin-left: auto;
+  margin-right: 0;
+  padding-left: 20px;
+  text-align: center;
+}
+  
+  .center-aligned .smaller-pie-chart {
+    display: flex;
+    width: 15%;
+    margin-right: 10px;
+    order: 2;
+    justify-content: center;
+  }
+
+  /* Update your existing CSS for .center-aligned .smaller-pie-chart */
+.center-aligned .smaller-pie-chart {
+  width: 15%;
+  margin-right: 10px;
+  order: 2;
+  justify-content: center;
+}
+
+/* Add new CSS to center-align the InfoCard and Pie Chart */
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Push the smaller-pie-chart to the right */
+.smaller-pie-chart {
+  margin-left: auto;
+  flex-direction: row;
+  display: flex;
+  width: 300px;
+}
+
+
+}

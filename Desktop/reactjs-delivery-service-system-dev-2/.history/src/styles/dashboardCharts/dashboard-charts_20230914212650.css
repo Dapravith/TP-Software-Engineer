@@ -1,0 +1,156 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  /* InfoCard.css */
+  /* Default background colors for InfoCards */
+  /* Hover styles for each InfoCard */
+  /* Styling for the icon */
+  /* Styling for title */
+  /* Styling for value */
+}
+.dashboard h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.dashboard .info-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next row if necessary */
+}
+.dashboard .info-card {
+  flex: 1; /* Distribute available space equally among flex items */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  min-width: 200px;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+.dashboard .info-card i {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.dashboard .info-title {
+  font-size: 15px;
+  margin: 0;
+  color: "#ffff";
+}
+.dashboard .info-value {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+.dashboard .info-card.total-branch-owner {
+  background-color: #3498db; /* Blue */
+}
+.dashboard .info-card.items {
+  background-color: #e74c3c; /* Red */
+}
+.dashboard .info-card.incoming-items {
+  background-color: #2ecc71; /* Green */
+}
+.dashboard .info-card.pending-items {
+  background-color: #f1c40f; /* Yellow */
+}
+.dashboard .info-card.delivered-item {
+  background-color: #9b59b6; /* Purple */
+}
+.dashboard .info-card.total-profits {
+  background-color: #1abc9c; /* Turquoise */
+}
+.dashboard .info-card.total-branch-owner:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+.dashboard .info-card.items:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+.dashboard .info-card.incoming-items:hover {
+  background-color: #27ae60; /* Darker green on hover */
+}
+.dashboard .info-card.pending-items:hover {
+  background-color: #d4ac0d; /* Darker yellow on hover */
+}
+.dashboard .info-card.delivered-item:hover {
+  background-color: #8e44ad; /* Darker purple on hover */
+}
+.dashboard .info-card.total-profits:hover {
+  background-color: #16a085; /* Darker turquoise on hover */
+}
+.dashboard .info-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.dashboard .info-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+.dashboard .info-value {
+  font-size: 16px;
+  margin: 0;
+}
+.dashboard .chart-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.dashboard .center-aligned {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.dashboard .center-aligned .bar-chart {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+  margin-left: 0; /* Push it to the left side */
+  margin-right: auto; /* Push it to the right side */
+  padding-left: 20px;
+  display: block; /* Remove the flex display */
+  text-align: center; /* Center-align the content */
+}
+.dashboard .grouped-bar-chart {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: 0;
+  padding-left: 20px;
+  text-align: center;
+}
+.dashboard .bar-chart {
+  width: 100%;
+  max-width: 400px;
+  marign-top: 10px;
+  margin-left: auto;
+  margin-right: 0;
+  padding-left: 20px;
+  text-align: center;
+}
+.dashboard .center-aligned.smaller-pie-chart {
+  display: flex;
+  width: 15%;
+  margin-right: 10px;
+  order: 2;
+  justify-content: center;
+}/*# sourceMappingURL=dashboard-charts_20230914212650.css.map */

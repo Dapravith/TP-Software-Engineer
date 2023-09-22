@@ -1,0 +1,184 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  /* InfoCard.css */
+  /* Default background colors for InfoCards */
+  /* Hover styles for each InfoCard */
+  /* Styling for the icon */
+  /* Styling for title */
+  /* Styling for value */
+  /* Update your existing CSS for .center-aligned .smaller-pie-chart */
+  /* Add new CSS to center-align the InfoCard and Pie Chart */
+  /* Push the smaller-pie-chart to the right */
+}
+.dashboard h2 {
+  font-size: 20px;
+  margin-bottom: 14px;
+  color: "ffff";
+}
+.dashboard .info-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next row if necessary */
+}
+.dashboard .info-card {
+  flex: 1; /* Distribute available space equally among flex items */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  min-width: 200px;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+.dashboard .info-card i {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.dashboard .info-title {
+  font-size: 15px;
+  margin: 0;
+  color: "#ffff";
+}
+.dashboard .info-value {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+.dashboard .info-card.total-branch-owner {
+  background-color: #6283ec; /* Use primary color */
+}
+.dashboard .info-card.items {
+  background-color: #e74c3c; /* Use secondary color */
+}
+.dashboard .info-card.incoming-items {
+  background-color: #f39c12; /* Use tertiary color */
+}
+.dashboard .info-card.pending-items {
+  background-color: #27ae60; /* Use quaternary color */
+}
+.dashboard .info-card.delivered-item {
+  background-color: #9b59b6; /* Use quinary color */
+}
+.dashboard .info-card.total-profits {
+  background-color: #1abc9c; /* Use senary color */
+}
+.dashboard .info-card.some-other-category {
+  background-color: #3498db; /* Use septenary color */
+}
+.dashboard .info-card.total-branch-owner:hover {
+  background-color: #355fe6; /* Darken primary color on hover */
+}
+.dashboard .info-card.items:hover {
+  background-color: #d62c1a; /* Darken secondary color on hover */
+}
+.dashboard .info-card.incoming-items:hover {
+  background-color: #c87f0a; /* Darken tertiary color on hover */
+}
+.dashboard .info-card.pending-items:hover {
+  background-color: #1e8449; /* Darken quaternary color on hover */
+}
+.dashboard .info-card.delivered-item:hover {
+  background-color: #804399; /* Darken quinary color on hover */
+}
+.dashboard .info-card.total-profits:hover {
+  background-color: #148f77; /* Darken senary color on hover */
+}
+.dashboard .info-card.some-other-category:hover {
+  background-color: #217dbb; /* Darken septenary color on hover */
+}
+.dashboard .info-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.dashboard .info-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+.dashboard .info-value {
+  font-size: 16px;
+  margin: 0;
+}
+.dashboard .chart-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.dashboard .center-aligned {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.dashboard .center-aligned .bar-chart {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+  margin-left: 0; /* Push it to the left side */
+  margin-right: auto; /* Push it to the right side */
+  padding-left: 20px;
+  display: block; /* Remove the flex display */
+  text-align: center; /* Center-align the content */
+}
+.dashboard .grouped-bar-chart {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: 0;
+  padding-left: 20px;
+  text-align: center;
+}
+.dashboard .bar-chart {
+  width: 100%;
+  max-width: 400px;
+  marign-top: 10px;
+  margin-left: auto;
+  margin-right: 0;
+  padding-left: 20px;
+  text-align: center;
+}
+.dashboard .center-aligned .smaller-pie-chart {
+  display: flex;
+  width: 15%;
+  margin-right: 10px;
+  order: 2;
+  justify-content: center;
+}
+.dashboard .center-aligned .smaller-pie-chart {
+  width: 15%;
+  margin-right: 10px;
+  order: 2;
+  justify-content: center;
+}
+.dashboard .center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard .smaller-pie-chart {
+  margin-left: auto;
+  flex-direction: row;
+  display: flex;
+  width: 300px;
+}/*# sourceMappingURL=dashboard-charts_20230915103640.css.map */

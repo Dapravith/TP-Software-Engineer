@@ -1,0 +1,82 @@
+.admin-list {
+  width: 100%;
+  padding: 40px;
+}
+.admin-list h1 {
+  font-size: 25px;
+}
+.admin-list .admin-list-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background-color: #3a913a;
+  color: #ffffff;
+  font-weight: bold;
+  border-bottom: 2px solid #2a702a;
+}
+.admin-list .admin-list-header span {
+  flex: 1;
+  text-align: center;
+  margin: 0 10px;
+}
+.admin-list span:first-child {
+  font-weight: 600;
+  padding-left: 10px;
+  color: #5353ff;
+}
+.admin-list span:last-child {
+  font-weight: 600;
+  padding-right: 10px;
+  color: #ff6c37;
+}
+.admin-list .admin-list-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.admin-list .admin-list-container li {
+  width: 600px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  list-style-type: none;
+  border-radius: 5px;
+  color: #fff;
+}
+.admin-list .admin-list-container li div {
+  display: flex;
+  align-items: center;
+}
+.admin-list .admin-list-container li div .admin-pro {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-size: cover !important;
+  background-position: center !important;
+}
+.admin-list .admin-list-container li div .is-me {
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  margin-left: 10px;
+}
+.admin-list .admin-list-container li:nth-child(odd) {
+  background: #eee;
+}
+.admin-list .admin-list-container li button {
+  width: 30px;
+  height: 30px;
+  background: #ff2e2e;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 #999;
+  color: #fff;
+}/*# sourceMappingURL=admin-list_20230919130809.css.map */

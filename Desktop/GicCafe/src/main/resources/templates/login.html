@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIC Café</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .wrapper {
+            background: #ececec;
+            padding: 0 20px 0 20px;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header h1 {
+            font-weight: 700;
+            text-transform: capitalize;
+            text-shadow: 1px 1px 1px rgb(36, 183, 242), 2px 2px 1px rgb(57, 191, 245);
+        }
+
+        .row {
+            width: 900px;
+            height: 550px;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .side-image {
+            background-image: url('https://img.freepik.com/premium-photo/cup-coffee-latte-coffee-beans-old-wooden-background_126277-184.jpg?size=626&ext=jpg&ga=GA1.1.1241834010.1682148035&semt=robertav1_2_sidr');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            border-radius: 10px 0 0 10px;
+        }
+
+        img {
+            width: 35px;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+
+        .web {
+            font-weight: 700;
+            text-decoration: underline;
+        }
+
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .text p {
+            color: #fff;
+            font-size: 23px;
+        }
+
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .input-box {
+            width: 330px;
+            box-sizing: border-box;
+        }
+
+        .input-box header {
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .input-field {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding: 0 10px 0 10px;
+        }
+
+        .input {
+            height: 45px;
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            outline: none;
+            margin-bottom: 20px;
+            color: #40414a;
+        }
+
+        .input-box .input-field label {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            pointer-events: none;
+            transition: .5s;
+        }
+
+        .input-field .input:focus~label {
+            top: -10px;
+            font-size: 13px;
+        }
+
+        .input-field .input:valid~label {
+            top: -10px;
+            font-size: 13px;
+            color: #5d5076;
+        }
+
+        .input-field .input:focus,
+        .input-field .input:valid {
+            border-bottom: 1px solid #743ae1;
+        }
+
+        .submit {
+            border: none;
+            outline: none;
+            height: 45px;
+            color: white;
+            font-weight: 700;
+            font-size: 20px;
+            background: #10b981;
+            border-radius: 5px;
+            transition: .4s;
+        }
+
+        .submit:hover {
+            background: rgba(37, 95, 156, 0.9);
+        }
+
+        .signup {
+            text-align: center;
+            font-size: small;
+            margin-top: 25px;
+        }
+
+        span a {
+            text-decoration: none;
+            font-weight: 700;
+            color: blue;
+            transition: .5s;
+        }
+
+        span a:hover {
+            text-decoration: underline;
+            color: #000;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .side-image {
+                border-radius: 10px 10px 0 0;
+            }
+
+            img {
+                width: 35px;
+                position: absolute;
+                top: 20px;
+                left: 47%;
+            }
+
+            .text {
+                display: none;
+            }
+
+            .row {
+                max-width: 420px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container main">
+            <div class="row">
+                <div class="col-md-6 side-image">
+                </div>
+
+                <div class="col-md-6 right">
+                    <div class="input-box">
+                        <header>
+                            <h1>Log in</h1>
+                        </header>
+
+                        <form action="/tp16/task5" method="post">
+                            <div class="input-field">
+
+                                <input type="text" class="input" id="username" name="username" required autocomplete="off">
+                                <label for="useranme" >Username</label>
+                            </div>
+
+                            <div class="input-field">
+                                <input type="password" class="input" id="passwrod" name="password" required>
+                                <label for="password">Password</label>
+                            </div>
+
+                            <div class="input-field">
+                                <input type="submit" class="submit" id="submit" value="Login">
+                            </div>
+
+                            <div class="signup">
+                                <span>Don't have an anccount?<a href="#"> Sign up here</a></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

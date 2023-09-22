@@ -1,0 +1,107 @@
+$primary-color: #6283ec;
+$secondary-color: #e74c3c;
+$tertiary-color: #f39c12;
+$quaternary-color: #27ae60;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .info-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .info-card {
+    flex: 1;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+    margin: 15px;
+    width: calc(25% - 20px);
+
+    h3 {
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+  }
+
+  .info-card:nth-child(1) {
+    background-color: $primary-color;
+    color: white;
+  }
+
+  .info-card:nth-child(2) {
+    background-color: $secondary-color;
+    color: white;
+  }
+
+  .info-card:nth-child(3) {
+    background-color: $tertiary-color;
+    color: white;
+  }
+
+  .info-card:nth-child(4) {
+    background-color: $quaternary-color;
+    color: white;
+  }
+
+  .info-card:hover {
+    background-color: #ddd8d8;
+  }
+
+  .chart-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .grouped-bar-chart {
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+    padding-left: 20px;
+    justify-content: flex-start;
+  }
+
+  .pie-chart {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+    margin-top: 10px;
+    padding-right: 20px;
+  }
+}

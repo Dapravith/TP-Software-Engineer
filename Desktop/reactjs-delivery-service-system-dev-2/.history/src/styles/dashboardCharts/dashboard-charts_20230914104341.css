@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+  margin: 10px; /* Add margin to separate the cards */
+  width: calc(25% - 20px); /* Calculate width with margins included */
+}
+
+.info-card:nth-child(1) {
+  background-color: #6283ec;
+  color: white;
+}
+
+.info-card:nth-child(2) {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.info-card:nth-child(3) {
+  background-color: #f39c12;
+  color: white;
+}
+
+.info-card:nth-child(4) {
+  background-color: #27ae60;
+  color: white;
+}
+
+.info-card:hover {
+  background-color: #f0f0f0;
+}
+
+.info-card h3 {
+  margin: 10px 0;
+}
+
+.info-card p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.info-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.info-value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* src/components/DashboardCharts/styles/dashboard-charts.scss */
+.dashboard-chart {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
+.dashboard-chart:hover {
+  background-color: #e0e0e0;
+}
+.dashboard-chart h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bar-chart,
+.pie-chart {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+.bar-chart h3,
+.pie-chart h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}/*# sourceMappingURL=dashboard-charts_20230914104341.css.map */

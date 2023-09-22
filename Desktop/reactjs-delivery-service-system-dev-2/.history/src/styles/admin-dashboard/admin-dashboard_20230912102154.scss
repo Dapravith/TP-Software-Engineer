@@ -1,0 +1,675 @@
+$light-box-shadow: 0 2px 4px 0 #00000020;
+$light: #fff;
+$light-blue: #f6f9fc;
+$style: #ff6c37;
+$style-hover: #d25a2e;
+$light-gray: #eee;
+$dark: #000;
+$btn-shadow: 0 2px 5px 0 #999;
+$cancel: #e0e0e0;
+$success: #3a913a;
+$danger: #da5050;
+$danger-hover: #b34242;
+$menu-shadow: 0 0 10px 0 #00000026;
+$dark-opacity: rgba(0,0,0,0.5);
+@mixin center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin button() {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.admin-dashboard {
+    .admin-dashboard-menu {
+        width: 300px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: $light;
+        box-shadow: $menu-shadow;
+        z-index: 1000;
+        transform: translateX(-110%);
+        transition: 0.2s;
+        padding: 20px;
+        .admin-dashboard-menu-close {
+            width: 45px;
+            height: 45px;
+            @include center();
+            position: relative;
+            border-radius: 50%;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            transition: 0.2s;
+            cursor: pointer;
+            &:hover {
+                background: $light-gray;
+            }
+            .line {
+                width: 25px;
+                height: 3px;
+                background: $dark;
+                border-radius: 5px;
+                &:nth-child(1) {
+                    position: absolute;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2) {
+                    position: absolute;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+        .admin-dashboard-menu-top {
+            width: 100%;
+            height: 500px;
+            .admin-dashboard-menu-logo {
+                width: 100%;
+                height: 100px;
+                margin-top: 40px;
+                @include center();
+                text-align: center;
+                h1 {
+                    font-size: 25px;
+                    text-transform: uppercase;
+                }
+            }
+            .admin-dashboard-menu-list {
+                width: 100%;
+                li {
+                    width: 100%;
+                    height: 50px;
+                    @include button();
+                    border-radius: 5px;
+                    background: unset;
+                    transition: 0.2s;
+                    font-size: 16px;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 20px;
+                    list-style-type: none;
+                    &:hover {
+                        background: $light-gray;
+                    }
+                }
+            }
+        }
+        .admin-dashboard-menu-bottom {
+            width: 100%;
+            height: 300px;
+            .admin-logout {
+                width: 100%;
+                button {
+                    width: 100%;
+                    height: 50px;
+                    border: none;
+                    outline: none;
+                    font-size: 16px;
+                    background: $style;
+                    color: $light;
+                    border-radius: 5px;
+                    transition: 0.2s;
+                    cursor: pointer;
+                    box-shadow: $btn-shadow;
+                    &:hover {
+                        background: $style-hover;
+                    }
+                }
+            }
+        }
+    }
+    .dark-panel {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: $dark-opacity;
+    }
+    .admin-dashboard-header {
+        width: 100%;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+        .admin-dashboard-header-hamburger {
+            width: 45px;
+            height: 45px;
+            @include center();
+            flex-direction: column;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.2s;
+            &:hover {
+                background: $light-gray;
+            }
+            .line {
+                width: 25px;
+                height: 3px;
+                background: $dark;
+                border-radius: 5px;
+                &:nth-child(2) {
+                    margin: 5px 0;
+                }
+            }
+        }
+        .admin-dashboard-header-profile {
+            .admin-infos {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                .admin-profile {
+                    background-size: cover !important;
+                    background-position: center !important;
+                }
+                .admin-name {
+                    margin-left: 5px;
+                    p {
+                        font-size: 16px;
+                    }
+                }
+                svg {
+                    width: 12px;
+                    margin-left: 5px;
+                    transition: 0.2s;
+                }
+            }
+            .settings {
+                width: 200px;
+                background: $light;
+                position: absolute;
+                top: 70px;
+                right: 40px;
+                box-shadow: $light-box-shadow;
+                animation: fade 0.2s;
+                @keyframes fade {
+                    0% {
+                        opacity: 0;
+                    } 100% {
+                        opacity: 1;
+                    }
+                }
+                button {
+                    width: 100%;
+                    height: 40px;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    background: unset;
+                    font-size: 16px;
+                    cursor: pointer;
+                    transition: 0.2s;
+                    &:hover {
+                        background: $style;
+                        color: $light;
+                    }
+                }
+            }
+        }
+
+    }
+    .admin-dashboard-container {
+        width: 100%;
+        max-width: 1600px;
+        margin: auto;
+        .settings {
+            padding: 40px;
+            .admin-updated, .admin-updated-error {
+                height: 50px;
+                padding: 0 20px;
+                background: $success;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                border-radius: 0 5px 5px 0;
+                position: absolute;
+                bottom: 40px;
+                left: 0;
+                margin: auto;
+                animation: from-left 0.3s;
+                @keyframes from-left {
+                    0% {
+                        left: -100%;
+                    } 100% {
+                        left: 0;
+                    }
+                }
+                p {
+                    color: $light;
+                    font-size: 16px;
+                }
+            }
+            .admin-updated-error {
+                background: $danger;
+            }
+            .alert-update {
+                width: 100%;
+                height: 100vh;
+                background: rgba(0,0,0,0.5);
+                position: fixed;
+                top: 0;
+                left: 0;
+                @include center();
+                z-index: 1000;
+                .update-container {
+                    width: 500px;
+                    padding: 20px;
+                    background: $light-blue;
+                    display: flex;
+                    border-radius: 5px;
+                    flex-direction: column;
+                    h1 {
+                        font-size: 25px;
+                        margin-bottom: 20px;
+                    }
+                    input {
+                        width: 100%;
+                        height: 40px;
+                        border: none;
+                        outline: none;
+                        border-radius: 5px;
+                        box-shadow: $light-box-shadow;
+                        font-size: 16px;
+                        padding: 0 15px;
+                        border: 1px solid transparent;
+                        &:focus {
+                            border-color: $style;
+                        }
+                    }
+                    textarea {
+                        width: 100%;
+                        height: 150px;
+                        border: none;
+                        outline: none;
+                        border-radius: 5px;
+                        box-shadow: $light-box-shadow;
+                        font-size: 16px;
+                        padding: 15px;
+                        border: 1px solid transparent;
+                        resize: none;
+                        &:focus {
+                            border-color: $style;
+                        }
+                    }
+                    .update-btn {
+                        width: 100%;
+                        max-width: 400px;
+                        @include center();
+                        gap: 10px;
+                        button {
+                            width: 200px;
+                            max-width: 200px;
+                            margin-top: 10px;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                            height: 40px;
+                            width: 100%;
+                            font-size: 16px;
+                            color: $light;
+                            background: $style;
+                            border-radius: 5px;
+                            box-shadow: $btn-shadow;
+                            transition: 0.2s;
+                            &:hover {
+                                background: $style-hover;
+                            }
+                            &:nth-child(1) {
+                                background: $cancel;
+                                color: $dark;
+                            }
+                        }
+                    }
+                }
+            }
+            .settings-title {
+                h1 {
+                    font-size: 25px;
+                }
+            }
+            .admin-information {
+                width: 100%;
+                @include center();
+                margin-top: 50px;
+                .admin-information-container {
+                    width: 800px;
+                    height: 500px;
+                    max-width: 800px;
+                    @include center();
+                    .admin-information-left {
+                        width: 300px;
+                        max-width: 300px;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        .admin-information-profile {
+                            width: 100%;
+                            height: 300px;
+                            background-size: cover !important;
+                            background-position: center !important;
+                            border-radius: 50% !important;
+                        }
+                        button {
+                            padding: 0 20px;
+                            height: 40px;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                            border-radius: 5px;
+                            background: $style;
+                            color: $light;
+                            font-size: 16px;
+                            margin-top: 20px;
+                            transition: 0.2s;
+                            &:hover {
+                                background: $style-hover;
+                            }
+                        }
+                    }
+                    .admin-information-right {
+                        width: 500px;
+                        max-width: 500px;
+                        height: 100%;
+                        padding-left: 40px;
+                        .admin-information-content {
+                            margin-bottom: 15px;
+                            h3 {
+                                font-size: 20px;
+                                button {
+                                    padding: 2px 4px;
+                                    border: none;
+                                    outline: none;
+                                    cursor: pointer;
+                                    border-radius: 5px;
+                                    font-size: 14px;
+                                    color: $light;
+                                    background: $style;
+                                    transition: 0.2s;
+                                    margin-left: 5px;
+                                    &:hover {
+                                        transform: scale(1.1);
+                                    }
+                                }
+                            }
+                            p {
+                                font-size: 16px;
+                                margin-top: 2.5px;
+                            }
+                            .change-password {
+                                display: flex;
+                                flex-direction: column;
+                                input {
+                                    width: 300px;
+                                    height: 40px;
+                                    border: none;
+                                    outline: none;
+                                    font-size: 16px;
+                                    padding: 0 15px;
+                                    margin-top: 10px;
+                                    border-radius: 5px;
+                                    box-shadow: $light-box-shadow;
+                                    border: 1px solid transparent;
+                                    &:focus {
+                                        border: 1px solid $style;
+                                    }
+                                }
+                            }
+                        }
+                        .save {
+                            width: 100%;
+                            margin-top: 20px;
+                            display: flex;
+                            align-items: center;
+                            button {
+                                height: 50px;
+                                padding: 0 20px;
+                                border: none;
+                                outline: none;
+                                cursor: pointer;
+                                font-size: 16px;
+                                background: $style;
+                                border-radius: 5px;
+                                color: $light;
+                                transition: 0.2s;
+                                box-shadow: $btn-shadow;
+                                &:hover {
+                                    background: $style-hover;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .branch-owner-container {
+            width: 100%;
+            padding: 40px;
+            .alert-delete-branch-container {
+                width: 100%;
+                height: 100vh;
+                background: $dark-opacity;
+                position: fixed;
+                top: 0;
+                left: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .alert-delete-branch {
+                    width: 400px;
+                    padding: 20px;
+                    background: $light;
+                    border-radius: 5px;
+                    h1 {
+                        font-size: 25px;
+                    }
+                    .alert-delete-branch-btn {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        margin-top: 20px;
+                        button {
+                            height: 50px;
+                            padding: 0 20px;
+                            font-size: 16px;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                            border-radius: 5px;
+                            box-shadow: $btn-shadow;
+                            transition: background-color 0.2s;
+                            &:nth-child(1) {
+                                margin-right: 10px;
+                                background: $light;
+                                &:hover {
+                                    background: $light-gray;
+                                }
+                            }
+                            &:nth-child(2) {
+                                background: $style;
+                                color: $light;
+                                &:hover {
+                                    background: $style-hover;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .branch-owner-details-path {
+                p {
+                    span {
+                        text-decoration: underline;
+                        color: $style;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .branch-owner-background {
+                width: 100%;
+                height: 200px;
+                background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(https://images.unsplash.com/photo-1580674285054-bed31e145f59?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80) no-repeat;
+                background-size: cover;
+                background-position: center;
+                border-radius: 5px;
+                @include center();
+                h1 {
+                    font-size: 30px;
+                    color: $light;
+                }
+            }
+            .all-branch-owners {
+                width: 100%;
+                max-width: 1600px;
+                margin: auto;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+                margin-top: 40px;
+                .branch-owner-item {
+                    max-width: 400px;
+                    background: $light;
+                    box-shadow: $light-box-shadow;
+                    border-radius: 5px;
+                    padding: 20px;
+                    @include center();
+                    flex-direction: column;
+                    .branch-owner-item-image {
+                        width: 100%;
+                        @include center();
+                        padding: 20px;
+                        border: 1px solid $light-gray;
+                        border-radius: 5px;
+                        img {
+                            height: 60px;
+                        }
+                    }
+                    .branch-owner-item-city {
+                        margin-top: 10px;
+                        h1 {
+                            font-size: 20px;
+                            font-weight: bold;
+                        }
+                    }
+                    .branch-owner-item-manager {
+                        width: 100%;
+                        height: 20px;
+                        margin: 20px 0 40px 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .branch-owner-item-manager-profile {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background-size: cover !important;
+                            background-position: center !important;
+                        }
+                        p {
+                            margin-left: 5px;
+                        }
+                    }
+                    .all-br-btn {
+                        width: 100%;
+                        height: 50px;
+                        max-width: 400px;
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 10px;
+                        button {
+                            max-width: 200px;
+                            height: 100%;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                            font-size: 16px;
+                            color: $light;
+                            border-radius: 5px;
+                            box-shadow: $btn-shadow;
+                            transition: background-color 0.2s;
+                            &:nth-child(1) {
+                                background: $style;
+                                &:hover {
+                                    background: $style-hover;
+                                }
+                            }
+                            &:nth-child(2) {
+                                background: $danger;
+                                &:hover {
+                                    background: $danger-hover;
+                                }
+                            }
+                        }
+                    }
+                    // button {
+                    //     width: 100%;
+                    //     height: 50px;
+                    //     @include button();
+                    //     border-radius: 5px;
+                    //     background: $style;
+                    //     color: $light;
+                    //     cursor: pointer;
+                    //     box-shadow: $btn-shadow;
+                    //     transition: background-color 0.2s;
+                    //     &:hover {
+                    //         background: $style-hover;
+                    //     }
+                    // }
+                    // #branch-delete {
+                    //     margin-top: 10px;
+                    //     background: $danger;
+                    //     color: $light;
+                    //     &:hover {
+                    //         background: $light-gray;
+                    //     }
+                    // }
+                }
+            }
+            .branch-owner-details {
+                width: 100%;
+                margin-top: 40px;
+                display: flex;
+                align-items: flex-start;
+                .google-map {
+                    width: 500px;
+                }
+                .branch-owner-information {
+                    width: 500px;
+                    max-width: 500px;
+                    // padding: 0 40px;
+                    gap: 10px 20px;
+                    z-index: 500;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    padding-left: 40px;
+                    .branch-owner-information-profile {
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 50%;
+                        background-size: cover !important;
+                        background-position: center !important;
+                    }
+                    div {
+                        max-width: 250px;
+                        h1 {
+                            font-size: 20px;
+                            font-weight: 600;
+                            margin-top: 10px;
+                        }
+                        p {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
