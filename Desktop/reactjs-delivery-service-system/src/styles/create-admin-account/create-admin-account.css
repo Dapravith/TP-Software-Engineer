@@ -1,0 +1,120 @@
+.create-branch-account {
+  width: 100%;
+  padding: 40px;
+}
+.create-branch-account .create-branch-account-title h1 {
+  font-size: 25px;
+}
+.create-branch-account form {
+  max-width: 800px;
+  width: 800px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 40px;
+}
+.create-branch-account form div {
+  width: 400px;
+  max-width: 400px;
+}
+.create-branch-account form div label {
+  font-weight: 600;
+}
+.create-branch-account form div input {
+  margin-top: 5px;
+  width: 100%;
+  height: 40px;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1254901961);
+  border: none;
+  outline: none;
+  border: 1px solid transparent;
+  font-size: 16px;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+.create-branch-account form div input:focus {
+  border-color: #ff6c37;
+}
+.create-branch-account form div textarea {
+  margin-top: 5px;
+  width: 100%;
+  height: 100px;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1254901961);
+  border: none;
+  outline: none;
+  border: 1px solid transparent;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  resize: none;
+}
+.create-branch-account form div textarea:focus {
+  border-color: #ff6c37;
+}
+.create-branch-account form div .genders {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+.create-branch-account form div .genders .gender {
+  height: 40px;
+  padding: 0 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1254901961);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.create-branch-account form div .genders .gender .gender-choice {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+.create-branch-account form div .genders .gender .gender-choice .gender-choice-inner {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.create-branch-account form div #browse {
+  height: 40px;
+  padding: 0 20px;
+  background: #5353ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 #999;
+  color: #fff;
+}
+.create-branch-account form div #browse svg {
+  width: 20px;
+  margin-right: 5px;
+  color: #fff;
+}
+.create-branch-account form div #create {
+  height: 50px;
+  padding: 0 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  background: #ff6c37;
+  color: #fff;
+  box-shadow: 0 2px 5px 0 #999;
+  transition: background-color 0.2s;
+}
+.create-branch-account form div #create:hover {
+  background: #d25a2e;
+}/*# sourceMappingURL=create-admin-account.css.map */

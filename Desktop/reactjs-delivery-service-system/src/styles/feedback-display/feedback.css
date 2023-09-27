@@ -1,0 +1,15 @@
+.feedback-display {
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.review-item {
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.review-item:last-child {
+    border-bottom: none;
+}

@@ -1,0 +1,38 @@
+variables:
+  IMAGE_NAME: "react-dss:latest"
+
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event' && $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "dev"
+
+stages:
+  - build-image
+  - deploy-image
+
+build-image:
+  stage: build-image
+  image: docker:stable
+  services:
+    - docker:20.10.16-dind
+  script:
+    - docker build -t $CI_REGISTRY/delivery-service-system/reactjs-delivery-service-system/$IMAGE_NAME .
+    - docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - docker push $CI_REGISTRY/delivery-service-system/reactjs-delivery-service-system/$IMAGE_NAME
+
+deploy-image:
+  stage: deploy-image
+  image: alpine
+  environment:
+    name: deploy-dss
+  before_script:
+    - apk add openssh-client
+    - eval $(ssh-agent -s)
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo -e "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+    - chmod 700 ~/.ssh/id_rsa
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    
+  script:
+    - ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa $SSH_USER@$VM_IPADDRESS 'cd /root/dss && docker-compose pull && docker-compose up -d --build && docker ps'
+  

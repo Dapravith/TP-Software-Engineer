@@ -1,0 +1,45 @@
+$success: #3a913a;
+$light: #ffffff;
+$danger: #da5050;
+.right-top-alert-success {
+    height: 50px;
+    padding: 0 30px;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: $success;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $light;
+    animation: from-right 0.3s;
+    @keyframes from-right {
+        0% {
+            right: -100%;
+        } 100%{
+            right: 0;
+        }
+    }
+}
+.right-top-alert-failed {
+    height: 50px;
+    padding: 0 30px;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: $danger;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $light;
+    animation: from-right 0.3s;
+    @keyframes from-right {
+        0% {
+            right: -100%;
+        } 100%{
+            right: 0;
+        }
+    }
+}

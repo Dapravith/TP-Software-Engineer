@@ -1,0 +1,1433 @@
+.branch-owner-dashboard .filter-final-branch-container {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.branch-owner-dashboard .filter-final-branch-container .filter-final-branch {
+  width: 500px;
+  background: #f6f9fc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.branch-owner-dashboard .filter-final-branch-container .filter-final-branch .filter-final-branch-title {
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1254901961);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.branch-owner-dashboard .filter-final-branch-container .filter-final-branch .filter-final-branch-title h1 {
+  font-size: 25px;
+}
+.branch-owner-dashboard .filter-final-branch-container .filter-final-branch .filter-final-branch-content {
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.branch-owner-dashboard .filter-final-branch-container .filter-final-branch .filter-final-branch-content .filter-final-branch-choice {
+  height: 40px;
+  padding: 0 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1254901961);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.branch-owner-dashboard .filter-final-branch-container .filter-final-branch .filter-final-branch-content .filter-final-branch-choice .filter-final-branch-select {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+.branch-owner-dashboard .filter-final-branch-container .filter-final-branch .filter-final-branch-content .filter-final-branch-choice .filter-final-branch-select .filter-final-branch-dot {
+  width: 13px;
+  height: 13px;
+  background: #000;
+  border-radius: 50%;
+}
+.branch-owner-dashboard .filter-final-branch-container .filter-final-branch .filter-final-branch-content .filter-final-branch-content-btn {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.branch-owner-dashboard .filter-final-branch-container .filter-final-branch .filter-final-branch-content .filter-final-branch-content-btn button {
+  height: 50px;
+  padding: 0 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 #999;
+  transition: background-color 0.2s;
+}
+.branch-owner-dashboard .filter-final-branch-container .filter-final-branch .filter-final-branch-content .filter-final-branch-content-btn button:nth-child(1) {
+  background: #ff6c37;
+  color: #fff;
+}
+.branch-owner-dashboard .filter-final-branch-container .filter-final-branch .filter-final-branch-content .filter-final-branch-content-btn button:nth-child(1):hover {
+  background: #d25a2e;
+}
+.branch-owner-dashboard .display-invoice-container {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.branch-owner-dashboard .display-invoice-container .display-invoice {
+  width: 600px;
+  background: #f6f9fc;
+  border-radius: 5px;
+  padding: 0 0 40px 0;
+}
+.branch-owner-dashboard .display-invoice-container .display-invoice .display-invoice-title {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.branch-owner-dashboard .display-invoice-container .display-invoice .display-invoice-title h1 {
+  font-size: 25px;
+}
+.branch-owner-dashboard .display-invoice-container .display-invoice .display-invoice-content {
+  width: 100%;
+}
+.branch-owner-dashboard .display-invoice-container .display-invoice .display-invoice-content .display-invoice-content-data {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.branch-owner-dashboard .display-invoice-container .display-invoice .display-invoice-content .display-invoice-content-data:nth-child(odd) {
+  background: #eee;
+}
+.branch-owner-dashboard .display-invoice-container .display-invoice .display-invoice-content .display-invoice-content-total {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.branch-owner-dashboard .display-invoice-container .display-invoice .display-invoice-content .display-invoice-content-total h3 {
+  font-size: 20px;
+}
+.branch-owner-dashboard .display-invoice-container .display-invoice .display-invoice-content .display-invoice-content-total p {
+  font-size: 18px;
+  font-weight: 600;
+}
+.branch-owner-dashboard .display-invoice-container .display-invoice .display-invoice-btn {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
+.branch-owner-dashboard .display-invoice-container .display-invoice .display-invoice-btn button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  height: 50px;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px 0 #999;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+.branch-owner-dashboard .display-invoice-container .display-invoice .display-invoice-btn button:nth-child(1) {
+  background: #fff;
+  margin-right: 10px;
+}
+.branch-owner-dashboard .display-invoice-container .display-invoice .display-invoice-btn button:nth-child(1):hover {
+  background: #eee;
+}
+.branch-owner-dashboard .display-invoice-container .display-invoice .display-invoice-btn button:nth-child(2) {
+  background: #ff6c37;
+  color: #fff;
+}
+.branch-owner-dashboard .display-invoice-container .display-invoice .display-invoice-btn button:nth-child(2):hover {
+  background: #d25a2e;
+}
+.branch-owner-dashboard .alert-detail-popup {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.branch-owner-dashboard .alert-detail-popup .alert-detail {
+  width: 800px;
+  height: 500px;
+  background: #f6f9fc;
+  border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.branch-owner-dashboard .alert-detail-popup .alert-detail .alert-detail-close {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.branch-owner-dashboard .alert-detail-popup .alert-detail .alert-detail-close:hover {
+  background: #eee;
+}
+.branch-owner-dashboard .alert-detail-popup .alert-detail .alert-detail-close .line {
+  width: 30px;
+  height: 3px;
+  background: #000;
+  position: absolute;
+}
+.branch-owner-dashboard .alert-detail-popup .alert-detail .alert-detail-close .line:nth-child(1) {
+  transform: rotate(45deg);
+}
+.branch-owner-dashboard .alert-detail-popup .alert-detail .alert-detail-close .line:nth-child(2) {
+  transform: rotate(-45deg);
+}
+.branch-owner-dashboard .alert-detail-popup .alert-detail .alert-detail-image {
+  width: 400px;
+  max-width: 400px;
+  height: 100%;
+  background-size: cover !important;
+  background-position: center !important;
+}
+.branch-owner-dashboard .alert-detail-popup .alert-detail .alert-detail-content {
+  width: 400px;
+  max-width: 400px;
+  padding: 20px;
+}
+.branch-owner-dashboard .alert-detail-popup .alert-detail .alert-detail-content .alert-item-content {
+  margin-top: 10px;
+}
+.branch-owner-dashboard .alert-detail-popup .alert-detail .alert-detail-content .alert-item-content h1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.branch-owner-dashboard .alert-detail-popup .alert-detail .alert-detail-content .alert-item-content p span {
+  font-weight: 600;
+}
+.branch-owner-dashboard .alert-detail-popup .alert-detail .alert-detail-content .alert-item-destination {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+.branch-owner-dashboard .alert-detail-popup .alert-detail .alert-detail-content .alert-item-destination .left-des {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.branch-owner-dashboard .alert-detail-popup .alert-detail .alert-detail-content .alert-item-destination .left-des .left-des-point {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.branch-owner-dashboard .alert-detail-popup .alert-detail .alert-detail-content .alert-item-destination .left-des .left-des-point .special-point {
+  width: 10px;
+  height: 10px;
+  background: #000;
+  border-radius: 50%;
+}
+.branch-owner-dashboard .alert-detail-popup .alert-detail .alert-detail-content .alert-item-destination .left-des p {
+  font-weight: 600;
+  margin-top: 5px;
+}
+.branch-owner-dashboard .alert-detail-popup .alert-detail .alert-detail-content .alert-item-destination .line-des {
+  width: 100px;
+  height: 5px;
+  background: #000;
+  border-radius: 5px;
+  margin-top: 5px;
+  animation: left-to-right 1s linear infinite;
+}
+@keyframes left-to-right {
+  0% {
+    background: #ff2e2e;
+  }
+  25% {
+    background: #252525;
+  }
+  50% {
+    background: #505050;
+  }
+  75% {
+    background: #757575;
+  }
+  100% {
+    background: #ff2e2e;
+  }
+}
+.branch-owner-dashboard .alert-detail-popup .alert-detail .alert-detail-content .alert-item-destination .right-des {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.branch-owner-dashboard .alert-detail-popup .alert-detail .alert-detail-content .alert-item-destination .right-des .right-des-point {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.branch-owner-dashboard .alert-detail-popup .alert-detail .alert-detail-content .alert-item-destination .right-des .right-des-point .special-point {
+  width: 10px;
+  height: 10px;
+  background: #000;
+  border-radius: 50%;
+}
+.branch-owner-dashboard .alert-detail-popup .alert-detail .alert-detail-content .alert-item-destination .right-des p {
+  font-weight: 600;
+  margin-top: 5px;
+}
+.branch-owner-dashboard .alert-detail-popup #pending {
+  border: 3px solid #da5050;
+}
+.branch-owner-dashboard .alert-detail-popup #delivered {
+  border: 3px solid #3a913a;
+}
+.branch-owner-dashboard .alert-delete-popup {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.branch-owner-dashboard .alert-delete-popup .alert-delete {
+  width: 400px;
+  background: #f6f9fc;
+  padding: 20px;
+  border-radius: 5px;
+}
+.branch-owner-dashboard .alert-delete-popup .alert-delete h1 {
+  font-size: 25px;
+}
+.branch-owner-dashboard .alert-delete-popup .alert-delete .alert-delete-btn {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.branch-owner-dashboard .alert-delete-popup .alert-delete .alert-delete-btn button {
+  height: 50px;
+  padding: 0 20px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.branch-owner-dashboard .alert-delete-popup .alert-delete .alert-delete-btn button:nth-child(1) {
+  margin-right: 10px;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1254901961);
+}
+.branch-owner-dashboard .alert-delete-popup .alert-delete .alert-delete-btn button:nth-child(1):hover {
+  background: #eee;
+}
+.branch-owner-dashboard .alert-delete-popup .alert-delete .alert-delete-btn button:nth-child(2) {
+  background: #ff6c37;
+  color: #fff;
+  box-shadow: 0 2px 5px 0 #999;
+}
+.branch-owner-dashboard .alert-delete-popup .alert-delete .alert-delete-btn button:nth-child(2):hover {
+  background: #d25a2e;
+}
+.branch-owner-dashboard .branch-owner-dashboard-menu {
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1490196078);
+  z-index: 1000;
+  transform: translateX(-110%);
+  transition: 0.2s;
+  padding: 20px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-menu .branch-owner-dashboard-menu-close {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.branch-owner-dashboard .branch-owner-dashboard-menu .branch-owner-dashboard-menu-close:hover {
+  background: #eee;
+}
+.branch-owner-dashboard .branch-owner-dashboard-menu .branch-owner-dashboard-menu-close .line {
+  width: 25px;
+  height: 3px;
+  background: #000;
+  border-radius: 5px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-menu .branch-owner-dashboard-menu-close .line:nth-child(1) {
+  position: absolute;
+  transform: rotate(45deg);
+}
+.branch-owner-dashboard .branch-owner-dashboard-menu .branch-owner-dashboard-menu-close .line:nth-child(2) {
+  position: absolute;
+  transform: rotate(-45deg);
+}
+.branch-owner-dashboard .branch-owner-dashboard-menu .branch-owner-dashboard-menu-top {
+  width: 100%;
+  height: 500px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-menu .branch-owner-dashboard-menu-top .branch-owner-dashboard-menu-logo {
+  width: 100%;
+  height: 100px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.branch-owner-dashboard .branch-owner-dashboard-menu .branch-owner-dashboard-menu-top .branch-owner-dashboard-menu-logo h1 {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.branch-owner-dashboard .branch-owner-dashboard-menu .branch-owner-dashboard-menu-top .branch-owner-dashboard-menu-list {
+  width: 100%;
+}
+.branch-owner-dashboard .branch-owner-dashboard-menu .branch-owner-dashboard-menu-top .branch-owner-dashboard-menu-list li {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  background: unset;
+  transition: 0.2s;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  list-style-type: none;
+}
+.branch-owner-dashboard .branch-owner-dashboard-menu .branch-owner-dashboard-menu-top .branch-owner-dashboard-menu-list li:hover {
+  background: #eee;
+}
+.branch-owner-dashboard .branch-owner-dashboard-menu .branch-owner-dashboard-menu-bottom {
+  width: 100%;
+  height: 300px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-menu .branch-owner-dashboard-menu-bottom .branch-owner-logout {
+  width: 100%;
+}
+.branch-owner-dashboard .branch-owner-dashboard-menu .branch-owner-dashboard-menu-bottom .branch-owner-logout button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #ff6c37;
+  color: #fff;
+  border-radius: 5px;
+  transition: 0.2s;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 #999;
+}
+.branch-owner-dashboard .branch-owner-dashboard-menu .branch-owner-dashboard-menu-bottom .branch-owner-logout button:hover {
+  background: #d25a2e;
+}
+.branch-owner-dashboard .dark-panel {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 500;
+}
+.branch-owner-dashboard .branch-owner-dashboard-header {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-header .branch-owner-dashboard-header-hamburger {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.branch-owner-dashboard .branch-owner-dashboard-header .branch-owner-dashboard-header-hamburger:hover {
+  background: #eee;
+}
+.branch-owner-dashboard .branch-owner-dashboard-header .branch-owner-dashboard-header-hamburger .line {
+  width: 25px;
+  height: 3px;
+  background: #000;
+  border-radius: 5px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-header .branch-owner-dashboard-header-hamburger .line:nth-child(2) {
+  margin: 5px 0;
+}
+.branch-owner-dashboard .branch-owner-dashboard-header .location {
+  height: 40px;
+  padding: 0 20px;
+  background: #ff6c37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 40px;
+  cursor: default;
+}
+.branch-owner-dashboard .branch-owner-dashboard-header .location i {
+  font-size: 30px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-header .location h1 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-header .branch-owner-dashboard-header-profile .branch-owner-infos {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.branch-owner-dashboard .branch-owner-dashboard-header .branch-owner-dashboard-header-profile .branch-owner-infos .branch-owner-profile {
+  background-size: cover !important;
+  background-position: center !important;
+}
+.branch-owner-dashboard .branch-owner-dashboard-header .branch-owner-dashboard-header-profile .branch-owner-infos .branch-owner-name {
+  margin-left: 5px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-header .branch-owner-dashboard-header-profile .branch-owner-infos .branch-owner-name p {
+  font-size: 16px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-header .branch-owner-dashboard-header-profile .branch-owner-infos svg {
+  width: 12px;
+  margin-left: 5px;
+  transition: 0.2s;
+}
+.branch-owner-dashboard .branch-owner-dashboard-header .branch-owner-dashboard-header-profile .settings {
+  width: 200px;
+  background: #fff;
+  position: absolute;
+  top: 70px;
+  right: 40px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1254901961);
+  animation: fade 0.2s;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.branch-owner-dashboard .branch-owner-dashboard-header .branch-owner-dashboard-header-profile .settings button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: unset;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.branch-owner-dashboard .branch-owner-dashboard-header .branch-owner-dashboard-header-profile .settings button:hover {
+  background: #ff6c37;
+  color: #fff;
+}
+.branch-owner-dashboard .add-item-popup {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form {
+  width: 500px;
+  background: #f6f9fc;
+  border-radius: 5px;
+  overflow: hidden;
+  position: absolute;
+  top: 40px;
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-title {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1254901961);
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-title h1 {
+  font-size: 25px;
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-content {
+  width: 100%;
+  padding: 20px 20px 40px 20px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-content label {
+  font-size: 18px;
+  margin-top: 15px;
+  font-weight: 600;
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-content .destinations {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-content .destinations .destination-choice {
+  height: 40px;
+  padding: 0 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1254901961);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-content .destinations .destination-choice .choice {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-content .destinations .destination-choice .choice .choice-inner {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-content .destinations .destination-choice p {
+  margin: 0;
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-content input {
+  width: 100%;
+  height: 40px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1254901961);
+  font-size: 16px;
+  padding: 0 10px;
+  margin-top: 5px;
+  border: 1px solid transparent;
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-content input:focus {
+  border-color: #ff6c37;
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-content textarea {
+  width: 100%;
+  height: 100px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1254901961);
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid transparent;
+  resize: none;
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-content textarea:focus {
+  border-color: #ff6c37;
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-content select {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1254901961);
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-content select option {
+  width: 100%;
+  height: 40px;
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-content .btn-action {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-content .btn-action button {
+  height: 50px;
+  padding: 0 20px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-content .btn-action button:nth-child(1) {
+  margin-right: 10px;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1254901961);
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-content .btn-action button:nth-child(1):hover {
+  background: #eee;
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-content .btn-action button:nth-child(2) {
+  background: #ff6c37;
+  color: #fff;
+  box-shadow: 0 2px 5px 0 #999;
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-content .btn-action button:nth-child(2):hover {
+  background: #d25a2e;
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-content #file-upload {
+  display: none;
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-content p {
+  margin-top: 5px;
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-content #browse {
+  height: 40px;
+  padding: 0 20px;
+  background: #5353ff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-content #browse svg {
+  width: 25px;
+  margin-right: 5px;
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-content .image-name {
+  margin: 5px 0;
+  padding: 2px 5px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.branch-owner-dashboard .add-item-popup .add-item-popup-form form .form-content .image-name p {
+  font-size: 14px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container {
+  width: 100%;
+  padding: 40px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview {
+  width: 100%;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .branch-owner-all-history-container {
+  width: 100%;
+  padding: 10px 0 40px 0;
+  margin-top: 20px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .branch-owner-all-history-container .branch-owner-all-history {
+  width: 100%;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .branch-owner-all-history-container .branch-owner-all-history .item-history {
+  width: 600px;
+  padding: 20px;
+  border: 1px solid #eee;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .branch-owner-all-history-container .branch-owner-all-history .item-history h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ff6c37;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .branch-owner-all-history-container .branch-owner-all-history .item-history p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .branch-owner-all-history-container .branch-owner-all-history .item-history p span {
+  font-weight: 600;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .branch-owner-all-history-container .branch-owner-all-history .item-history ul {
+  margin-top: 10px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .branch-owner-all-history-container .branch-owner-all-history .item-history ul li {
+  list-style-type: none;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .branch-owner-all-history-container .branch-owner-all-history .item-history ul li:nth-child(odd) {
+  background: #eee;
+  border-radius: 5px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .branch-owner-overview-content {
+  width: 100%;
+  margin-top: 40px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .branch-owner-overview-content .branch-owner-boxes {
+  width: 100%;
+  max-width: 1440px;
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .branch-owner-overview-content .branch-owner-boxes .branch-owner-box {
+  max-width: 360px;
+  height: 200px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1254901961);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 3px solid transparent;
+  transition: border 0.2s;
+  cursor: pointer;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .branch-owner-overview-content .branch-owner-boxes .branch-owner-box:hover {
+  border-color: #ff6c37;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .branch-owner-overview-content .branch-owner-boxes .branch-owner-box i {
+  font-size: 40px;
+  color: #ff6c37;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .branch-owner-overview-content .branch-owner-boxes .branch-owner-box h1 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .branch-owner-overview-content .branch-owner-boxes .branch-owner-box p {
+  font-size: 20px;
+  border-radius: 5px;
+  color: #000;
+  font-weight: bold;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .branch-owner-overview-title h1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .branch-owner-item-functions {
+  width: 100%;
+  margin: 20px 0 20px 0;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .branch-owner-item-functions .left-functions {
+  display: flex;
+  align-items: center;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .branch-owner-item-functions .left-functions button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  height: 30px;
+  padding: 0 20px;
+  border-radius: 5px;
+  background: #ff6c37;
+  color: #fff;
+  box-shadow: 0 2px 5px 0 #999;
+  transition: 0.2s;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .branch-owner-item-functions .left-functions button:nth-child(2) {
+  margin-left: 5px;
+  background: #fff;
+  color: #000;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .branch-owner-item-functions .left-functions button:nth-child(2):hover {
+  background: #eee;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .branch-owner-item-functions .left-functions button:hover {
+  background: #d25a2e;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .add-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .add-item h3 {
+  font-size: 18px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .add-item h3 span {
+  font-weight: 600;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .add-item button {
+  height: 40px;
+  padding: 0 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 16px;
+  background: #ff6c37;
+  color: #fff;
+  box-shadow: 0 2px 5px 0 #999;
+  transition: 0.2s;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .add-item button i {
+  margin-right: 10px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .add-item button:hover {
+  background: #d25a2e;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .no-item {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .no-item .no-item-content {
+  width: 400px;
+  height: 200px;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1254901961);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .no-item .no-item-content i {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #ff6c37;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .no-item .no-item-content h1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1440px;
+  height: 100px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview {
+  width: 100%;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-header .content-header {
+  max-width: 180px;
+  width: 180px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-header .content-header:nth-child(1) {
+  max-width: 150px;
+  width: 150px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-header .content-header:nth-child(4) {
+  max-width: 200px;
+  width: 200px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-header .content-header:nth-child(5) {
+  max-width: 300px;
+  width: 300px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-header .content-header:nth-child(6) {
+  max-width: 100px;
+  width: 100px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-header .content-header h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-header .content-header button {
+  height: 30px;
+  padding: 0 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 5px;
+  border-radius: 5px;
+  background: #5353ff;
+  box-shadow: 0 2px 5px 0 #999;
+  color: #fff;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-data {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 5px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-data .content-data {
+  max-width: 180px;
+  width: 180px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-data .content-data .select-delivered {
+  width: 18px;
+  height: 18px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-data .content-data .select-delivered i {
+  font-size: 15px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-data .content-data:nth-child(1) {
+  max-width: 150px;
+  width: 150px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-data .content-data:nth-child(4) {
+  max-width: 200px;
+  width: 200px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-data .content-data:nth-child(5) {
+  max-width: 300px;
+  width: 300px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-data .content-data:nth-child(6) {
+  max-width: 100px;
+  width: 100px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-data .content-data p {
+  font-size: 16px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-data .content-data h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-data .content-data img {
+  height: 50px;
+  border-radius: 5px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-data .content-data .image {
+  width: 50px;
+  height: 50px;
+  background-size: cover !important;
+  background-position: center !important;
+  border-radius: 5px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-data .content-data #status-true {
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 30px;
+  background: #3a913a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-data .content-data #status-false {
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 30px;
+  background: #da5050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-data .content-data button {
+  width: 25px;
+  height: 25px;
+  background: #ff2e2e;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-data .content-data button i {
+  font-size: 18px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-data .content-data button:nth-child(1) {
+  margin-right: 5px;
+  background: #5353ff;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-data .content-data button:nth-child(2) {
+  margin-right: 5px;
+  background: #3a913a;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-data .content-data button:nth-child(3) {
+  background: #ff2e2e;
+  margin-right: 5px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-data .content-data button:nth-child(4) {
+  background: #3a913a;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-data .content-data button:hover {
+  border-color: #000;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-manage-content .items-manage-content-overview .items-manage-content-data .content-data #delete-btn {
+  background: #ff2e2e !important;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-delivered {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-delivered button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  height: 50px;
+  padding: 0 40px;
+  background: #5353ff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 #999;
+  color: #fff;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-overview .items-delivered button:hover {
+  background: #4141c8;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .alert-upload-profile {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .alert-upload-profile .upload-profile {
+  width: 400px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .alert-upload-profile .upload-profile h1 {
+  font-size: 25px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .alert-upload-profile .upload-profile input {
+  margin-top: 10px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .alert-upload-profile .upload-profile .upload-profile-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .alert-upload-profile .upload-profile .upload-profile-btn button {
+  height: 40px;
+  padding: 0 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 #999;
+  transition: background-color 0.2s;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .alert-upload-profile .upload-profile .upload-profile-btn button:nth-child(1) {
+  margin-right: 10px;
+  background: #fff;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .alert-upload-profile .upload-profile .upload-profile-btn button:nth-child(1):hover {
+  background: #eee;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .alert-upload-profile .upload-profile .upload-profile-btn button:nth-child(2) {
+  background: #ff6c37;
+  color: #fff;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .alert-upload-profile .upload-profile .upload-profile-btn button:nth-child(2):hover {
+  background: #d25a2e;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .alert-updated {
+  height: 50px;
+  padding: 0 40px;
+  background: #3a913a;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px 0 0 5px;
+  animation: from-right 0.5s;
+}
+@keyframes from-right {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0;
+  }
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .alert-updated p {
+  color: #fff;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .branch-owner-profile-title h1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .branch-owner-profile-container {
+  margin-top: 50px;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: center;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .branch-owner-profile-container .br-profile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .branch-owner-profile-container .br-profile .branch-owner-profile-image {
+  width: 300px;
+  height: 300px;
+  background-size: cover !important;
+  background-position: center !important;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .branch-owner-profile-container .br-profile .branch-owner-profile-image:hover .edit-profile-image {
+  display: flex;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .branch-owner-profile-container .br-profile .branch-owner-profile-image .edit-profile-image {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  animation: profile 0.2s;
+}
+@keyframes profile {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .branch-owner-profile-container .br-profile button {
+  height: 30px;
+  padding: 0 20px;
+  background: #ff6c37;
+  margin-top: 20px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .branch-owner-profile-container .br-profile button:hover {
+  background: #d25a2e;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .branch-owner-profile-container .branch-owner-profile-container-content {
+  width: 700px;
+  max-width: 700px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 20px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .branch-owner-profile-container .branch-owner-profile-container-content .branch-owner-content {
+  width: 100%;
+  max-width: 350px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .branch-owner-profile-container .branch-owner-profile-container-content .branch-owner-content h3 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .branch-owner-profile-container .branch-owner-profile-container-content .branch-owner-content p {
+  font-size: 16px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .branch-owner-profile-container .branch-owner-profile-container-content .branch-owner-content input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 0 10px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1254901961);
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .branch-owner-profile-container .branch-owner-profile-container-content .branch-owner-content textarea {
+  width: 100%;
+  height: 150px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1254901961);
+  resize: none;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .branch-owner-profile-container .branch-owner-profile-container-content .branch-owner-content button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  height: 30px;
+  padding: 0 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  background: #5353ff;
+  color: #fff;
+  box-shadow: 0 2px 5px 0 #999;
+  margin-top: 20px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .branch-owner-profile-container .branch-owner-profile-container-content .save {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .branch-owner-profile-container .branch-owner-profile-container-content .save button {
+  height: 40px;
+  padding: 0 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 #999;
+  transition: background-color 0.2s;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .branch-owner-profile-container .branch-owner-profile-container-content .save button:nth-child(1) {
+  background: #fff;
+  margin-right: 10px;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .branch-owner-profile-container .branch-owner-profile-container-content .save button:nth-child(1):hover {
+  background: #eee;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .branch-owner-profile-container .branch-owner-profile-container-content .save button:nth-child(2) {
+  background: #ff6c37;
+  color: #fff;
+}
+.branch-owner-dashboard .branch-owner-dashboard-container .branch-owner-profile .branch-owner-profile-container .branch-owner-profile-container-content .save button:nth-child(2):hover {
+  background: #d25a2e;
+}/*# sourceMappingURL=branch-owner-dashboard.css.map */

@@ -1,0 +1,277 @@
+.feedback-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adjust as needed for spacing */
+}
+
+.feedback-button-container button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.feedback-button-container button:hover {
+  background-color: #45a049;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 500px;
+}
+
+.feedback-alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #3a913a; /* Success color */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* To ensure it's above other elements */
+}
+
+.modal-content h2, .modal-content h3 {
+  margin-top: 0; /* Remove top margin for the first title */
+}
+
+.modal-content input, .modal-content textarea, .modal-content button {
+  width: 100%; /* Make form elements span the full width */
+  margin-bottom: 15px; /* Add some spacing between form elements */
+}
+
+.modal-content button {
+  cursor: pointer;
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.modal-content button:hover {
+  background-color: #45a049;
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 24px; /* Adjust as needed */
+  color: #aaa;
+  background-color: #fff;
+  border-radius: 50%; /* Make it circular */
+  padding: 5px 10px;
+  line-height: 1; /* Center the X vertically */
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.close-button:hover {
+  color: #000;
+  background-color: #eee;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px; /* Adjust as needed */
+}
+
+.feedback-button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s;
+}
+
+.feedback-button:hover {
+  background-color: #45a049; /* Darker green */
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 500px;
+  position: relative; /* To position the close button correctly */
+}
+
+.close-button:hover {
+  color: #fff;
+}
+
+/* Feedback Modal Styles */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1000;
+}
+
+.feedback-modal {
+  width: 80%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.feedback-modal h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.feedback-modal label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+}
+
+.feedback-modal input[type=text],
+.feedback-modal textarea,
+.feedback-modal input[type=number],
+.feedback-modal select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.feedback-modal textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.modal-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 50%;
+}
+
+.modal-buttons button:hover {
+  background-color: #f7f7f7;
+}
+
+/* Feedback Submit Button */
+.modal-buttons button:first-child {
+  background-color: #f44336; /* Green color */
+  color: #ffffff;
+}
+
+.modal-buttons button:first-child:hover {
+  background-color: #e33125;
+}
+
+/* Feedback Cancel Button */
+.modal-buttons button:last-child {
+  background-color: #4CAF50; /* Red color */
+  color: #ffffff;
+}
+
+.modal-buttons button:last-child:hover {
+  background-color: #45a049;
+}
+
+.star-rating {
+  display: flex;
+  direction: rtl; /* Reverse the order of the stars */
+}
+
+.star-rating input[type=radio] {
+  display: none;
+}
+
+.star-rating label {
+  font-size: 24px;
+  padding: 0 5px;
+  cursor: pointer;
+  color: #ccc; /* Default star color */
+}
+
+.star-rating input[type=radio]:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: gold; /* Highlighted star color */
+}
+
+.feedback-header {
+  color: #4CAF50; /* Green color */
+  text-align: center; /* Center align text */
+  border-bottom: 3px solid #4CAF50; /* Green border at the bottom */
+  padding-bottom: 10px; /* Padding at the bottom */
+  font-weight: bold; /* Bold font */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Slight text shadow for depth */
+}
+
+.feedback-display-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.feedback-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.rating {
+  color: #4CAF50;
+}/*# sourceMappingURL=feedback.css.map */

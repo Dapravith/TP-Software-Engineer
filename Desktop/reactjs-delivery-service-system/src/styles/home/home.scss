@@ -1,0 +1,252 @@
+$light-box-shadow: 0 2px 4px 0 #00000020;
+$light: #fff;
+$light-blue: #f6f9fc;
+$style: #ff6c37;
+$style-hover: #d25a2e;
+$light-gray: #eee;
+$dark: #000;
+$btn-shadow: 0 2px 5px 0 #999;
+$cancel: #e0e0e0;
+$success: #3a913a;
+$danger: #da5050;
+$menu-shadow: 0 0 10px 0 #00000026;
+$dark-opacity: rgba(0,0,0,0.5);
+$delete: #ff2e2e;
+$blue: #5353ff;
+$blue-hover: #4141c8;
+@mixin center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin button() {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.home {
+    .home-header {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+        h1 {
+            font-size: 30px;
+            span {
+                font-weight: 600;
+                color: $style;
+            }
+        }
+        a {
+            text-decoration: none;
+            button {
+                border: none;
+                outline: none;
+                height: 40px;
+                padding: 0 20px;
+                font-size: 16px;
+                cursor: pointer;
+                border-radius: 5px;
+                background: unset;
+                border: 2px solid $style;
+                color: $style;
+                transition: background-color 0.2s;
+                &:hover {
+                    background: $style;
+                    color: $light;
+                }
+            }
+        }
+    }
+    .home-search {
+        padding: 100px 20px;
+        @include center();
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1594960598451-f8509775168b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2831&q=80") no-repeat;
+        background-size: cover;
+        background-position: center;
+        flex-direction: column;
+        h1 {
+            color: $light;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+        .search {
+            box-shadow: 0 2px 50px #00000080;
+            background: $light;
+            padding: 5px;
+            border-radius: 5px;
+            input {
+                width: 400px;
+                height: 50px;
+                padding: 0 10px;
+                font-size: 18px;
+                border: none;
+                outline: none;
+                border: 1px solid transparent;
+                border-radius: 5px;
+                &:focus {
+                    border-color: $style;
+                }
+            }
+            button {
+                height: 50px;
+                padding: 0 40px;
+                background: $style;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                color: $light;
+                font-size: 18px;
+                border-radius: 5px;
+                margin-left: 5px;
+                transition: background-color 0.2s;
+                &:hover {
+                    background: $style-hover;
+                }
+            }
+        }
+    }
+    .search-loading {
+        width: 100%;
+        height: 400px;
+        @include center();
+        .loading {
+            width: 100px;
+            height: 100px;
+            border: 3px solid $dark;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-radius: 50%;
+            animation: rotation 0.5s linear infinite;
+            @keyframes rotation {
+                0% {
+                    transform: rotate(0deg);
+                } 100% {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    .results-alert {
+        width: 100%;
+        @include center();
+        padding: 80px 20px;
+        .results-alert-content {
+            padding: 40px 40px;
+            background: $light;
+            box-shadow: $light-box-shadow;
+            border-radius: 5px;
+            @include center();
+            text-align: center;
+            flex-direction: column;
+            h3 {
+                font-size: 30px;
+                color: $style;
+            }
+            i {
+                font-size: 40px;
+                color: $style;
+            }
+            p {
+                font-size: 18px;
+                margin-top: 10px;
+                color: gray;
+            }
+        }
+    }
+    .home-arrival-message {
+        width: 100%;
+        @include center();
+        padding: 40px 20px;
+        .home-arrival-message-content {
+            height: 50px;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $light;
+            border-radius: 5px;
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+    .home-arrival-status {
+        width: 100%;
+        @include center();
+        padding: 80px 20px;
+        .arrival-status {
+            display: flex;
+            align-items: center;
+            .branch-arrival-status {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .branch-arrival-status-circle {
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    border: 3px solid $success;
+                    @include center();
+                    .branch-arrival-status-circle-inner {
+                        width: 10px;
+                        height: 10px;
+                        background: $success;
+                        border-radius: 50%;
+                        position: relative;
+                        @include center();
+                        .branch-arrival-city {
+                            height: 40px;
+                            padding: 0 20px;
+                            background: $light;
+                            position: absolute;
+                            border-radius: 5px;
+                            display: flex;
+                            align-items: center;
+                            box-shadow: $light-box-shadow;
+                            @include center();
+                            .cursor {
+                                width: 12px;
+                                height: 12px;
+                                background: $light;
+                                transform: rotate(45deg);
+                                position: absolute;
+                            }
+                            #space {
+                                margin: 0 2px;
+                            }
+                            p {
+                                font-size: 16px;
+                                font-weight: 600;
+                                color: $light;
+                            }
+                        }
+                    }
+                }
+                .thread {
+                    width: 150px;
+                    height: 3px;
+                    margin: 0 10px;
+                    border-radius: 5px;
+                    background: gray;
+                }
+            }
+        }
+        // .arrival-status {
+        //     .branch-arrival-status {
+        //         width: 100px;
+        //         height: 100px;
+        //         background: brown;
+        //         .branch-arrival-status-circle {
+        //             width: 20px;
+        //             height: 20px;
+        //             background: $dark;
+        //         }
+        //     }
+        // }
+    }
+}

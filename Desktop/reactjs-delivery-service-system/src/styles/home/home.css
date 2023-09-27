@@ -1,0 +1,229 @@
+.home .home-header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+.home .home-header h1 {
+  font-size: 30px;
+}
+.home .home-header h1 span {
+  font-weight: 600;
+  color: #ff6c37;
+}
+.home .home-header a {
+  text-decoration: none;
+}
+.home .home-header a button {
+  border: none;
+  outline: none;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: unset;
+  border: 2px solid #ff6c37;
+  color: #ff6c37;
+  transition: background-color 0.2s;
+}
+.home .home-header a button:hover {
+  background: #ff6c37;
+  color: #fff;
+}
+.home .home-search {
+  padding: 100px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1594960598451-f8509775168b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2831&q=80") no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+}
+.home .home-search h1 {
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.home .home-search .search {
+  box-shadow: 0 2px 50px rgba(0, 0, 0, 0.5019607843);
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+.home .home-search .search input {
+  width: 400px;
+  height: 50px;
+  padding: 0 10px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+.home .home-search .search input:focus {
+  border-color: #ff6c37;
+}
+.home .home-search .search button {
+  height: 50px;
+  padding: 0 40px;
+  background: #ff6c37;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-left: 5px;
+  transition: background-color 0.2s;
+}
+.home .home-search .search button:hover {
+  background: #d25a2e;
+}
+.home .search-loading {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .search-loading .loading {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #000;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: rotation 0.5s linear infinite;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.home .results-alert {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+}
+.home .results-alert .results-alert-content {
+  padding: 40px 40px;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1254901961);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.home .results-alert .results-alert-content h3 {
+  font-size: 30px;
+  color: #ff6c37;
+}
+.home .results-alert .results-alert-content i {
+  font-size: 40px;
+  color: #ff6c37;
+}
+.home .results-alert .results-alert-content p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: gray;
+}
+.home .home-arrival-message {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+.home .home-arrival-message .home-arrival-message-content {
+  height: 50px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 5px;
+}
+.home .home-arrival-message .home-arrival-message-content p {
+  font-size: 16px;
+}
+.home .home-arrival-status {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+}
+.home .home-arrival-status .arrival-status {
+  display: flex;
+  align-items: center;
+}
+.home .home-arrival-status .arrival-status .branch-arrival-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .home-arrival-status .arrival-status .branch-arrival-status .branch-arrival-status-circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 3px solid #3a913a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .home-arrival-status .arrival-status .branch-arrival-status .branch-arrival-status-circle .branch-arrival-status-circle-inner {
+  width: 10px;
+  height: 10px;
+  background: #3a913a;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .home-arrival-status .arrival-status .branch-arrival-status .branch-arrival-status-circle .branch-arrival-status-circle-inner .branch-arrival-city {
+  height: 40px;
+  padding: 0 20px;
+  background: #fff;
+  position: absolute;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1254901961);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .home-arrival-status .arrival-status .branch-arrival-status .branch-arrival-status-circle .branch-arrival-status-circle-inner .branch-arrival-city .cursor {
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  transform: rotate(45deg);
+  position: absolute;
+}
+.home .home-arrival-status .arrival-status .branch-arrival-status .branch-arrival-status-circle .branch-arrival-status-circle-inner .branch-arrival-city #space {
+  margin: 0 2px;
+}
+.home .home-arrival-status .arrival-status .branch-arrival-status .branch-arrival-status-circle .branch-arrival-status-circle-inner .branch-arrival-city p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+.home .home-arrival-status .arrival-status .branch-arrival-status .thread {
+  width: 150px;
+  height: 3px;
+  margin: 0 10px;
+  border-radius: 5px;
+  background: gray;
+}/*# sourceMappingURL=home.css.map */
